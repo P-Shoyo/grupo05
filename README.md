@@ -1,4 +1,4 @@
-# grupo05
+# 'Ammonimus Inc.' :shipit:
 
 ## Projeto de Pesquisa e Inovação I
 
