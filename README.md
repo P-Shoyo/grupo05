@@ -13,7 +13,7 @@ Priscila Choi	RA: 01202083
 Tabata Fernanda dos Santos Silva	RA: 01202089
 Victor Pederzini	RA: 01202101**
  
-**PROJETOS PARA EMPRESAS (B2B)
+**PROJETOS PARA EMPRESAS (B2B)**
 
 **Tema** 
 Controle de temperatura e umidade para fins de armazenamento de nitrato de amônio
