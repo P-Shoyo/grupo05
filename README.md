@@ -4,22 +4,22 @@
 
 ### 1ADS-B – Grupo 05
 
-**Bruno Pinheiro Alves Teixeira	RA: 01202070
-Isabella Pires Silva	RA: 01202062
-Luan Collyns Sousa Silva	RA: 01202119
-Matheus Pinheiro Barbosa	RA: 01202097
-Nilton Rodrigo dos Santos Santana	RA: 01202051
-Priscila Choi	RA: 01202083
-Tabata Fernanda dos Santos Silva	RA: 01202089
-Victor Pederzini	RA: 01202101**
+- Bruno Pinheiro Alves Teixeira
+- Isabella Pires Silva	
+- Luan Collyns Sousa Silva	
+- Matheus Pinheiro Barbosa
+- Nilton Rodrigo dos Santos Santana	
+- Priscila Choi
+- Tabata Fernanda dos Santos Silva	
+- Victor Pederzini	
  
 **PROJETOS PARA EMPRESAS (B2B)**
 
-**Tema** 
-Controle de temperatura e umidade para fins de armazenamento de nitrato de amônio
+1. Tema
+   - Controle de temperatura e umidade para fins de armazenamento de nitrato de amônio
 
-**Sensores necessários** 
-DHT11 e LM35 (mais sensível às oscilações de temperatura)
+2. Sensores necessários
+   - DHT11 e LM35 (mais sensível às oscilações de temperatura)
 
-**Problemática** 
-Exposição de pessoas a riscos no caso de mal armazenamento de nitrato de amônio. Historicamente, temos a ocorrência de diversos casos de explosões que fizeram várias vítimas
+3. Problemática
+   - Exposição de pessoas a riscos no caso de mal armazenamento de nitrato de amônio. Historicamente, temos a ocorrência de diversos casos de explosões que fizeram várias vítimas
