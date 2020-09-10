@@ -1,0 +1,6 @@
+Relação entre o número de ciclos de temperatura (a questão dos 32°C) e a quantidade de água:
+When stabilized AN is sprayed with only 0,5% water (an amount which it can readily pick up from the atmosphere) and then subjected to five temperature cycles, its sensitivity to shock is increased considerably, just as if it were not stabilized
+Basicamente, 5 ciclos já representam perigo
+
+Se a temperatura estiver menor que 32°C e passar para mais de 32°C = 1 ciclo
+Especially problematic is a phase transition at 32 ◦C. The latter is a temperature which can be transitioned numerous times in the summer, and more problematically, in the spring in southern parts of the US. A phase transition is destructive to the prill and can lead to pulverization. The sensitivity of pure AN to detonation increases after it has gone through a few cycles of the transition at 32 ◦C
