@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<title>Line Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<h2>Média: <label id='average'>0.00</label></h2>
+		<h2>Média Hora: <label id='averageHour'>0.00</label></h2>
+	</section>
+	<section style="width:100%">
+		<canvas id="chart"></canvas>
+	<section>
+	<script>
+
+		var context = document.getElementById("chart").getContext("2d");
+		context.canvas.width = 1000; //altera largura do gráfico
+		context.canvas.height = 300; //altera altura do gráfico
+        
+        var configuration = {
+			type: 'line', //alteração do tipo de gráfico (barra, linhas, pizza...)
+			data: {
+				datasets: [{
+					label: "Temperature x Time",
+					type: 'line',
+					backgroundColor: ['rgba(255, 99, 0, 0.2)'], //altera a cor de fundo do gráfico
+					borderColor: ['#ff3232'], // altera a cor da linha do gráfico
+				}]
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						//type: 'value',
+						distribution: 'series',
+                        ticks: {
+							beginAtZero:true,
+							maxticksLimit: 5
+                        }
+					}],
+					yAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Temperature'
+                        },
+                        ticks: {
+							beginAtZero:true,
+							suggestedMin: 0,
+							suggestedMax: 30
+                        }
+					}]
+				},
+				animation: {
+					duration: 0
+				}
+			}
+        };
+        
+		var chart = new Chart(context, configuration);
+
+        //Função para obter os dados de temperatura do server
+        //Seria mais interessante fazer isso com WebSocket, porém para fins academicos, os dados serão atualizados via HTTP
+        
+        //Esse atributo dentro do contexto serve para saber qual foi o último índice processado, assim eliminado os outros elementos na
+        //hora de montar/atualizar o gráfico
+        this.lastIndexTemp = 0;
+        this.time = 0;
+
+        function get_data(){
+
+            var http = new XMLHttpRequest();
+            http.open('GET', 'http://localhost:3000/api', false);
+            http.send(null);        
+			
+            var obj = JSON.parse(http.responseText);
+			console.log(obj)
+            if (obj.data.length == 0){
+                return;
+            }
+
+            var _lastIndexTemp = this.lastIndexTemp;
+            this.lastIndexTemp = obj.data.length;
+            listTemp = obj.data.slice(_lastIndexTemp);
+
+            listTemp.forEach(data => {
+                //Máximo de 60 itens exibidos no gráfico
+                if (chart.data.labels.length == 10 && chart.data.datasets[0].data.length == 10){
+                    chart.data.labels.shift();
+                    chart.data.datasets[0].data.shift();
+                }
+
+                chart.data.labels.push(this.time++);
+                chart.data.datasets[0].data.push(parseFloat(data));
+                chart.update();
+			});
+			
+			document.getElementById('average').textContent = obj.average;
+			document.getElementById('averageHour').textContent = obj.averageHour;
+		} 
+		
+		get_data();
+
+
+		function sendTemperature(){
+			var http = new XMLHttpRequest();
+            http.open('POST', 'http://localhost:3000/api/sendData', false);
+            http.send(null);
+		}
+
+        setInterval(() => {
+			sendTemperature();
+			get_data();
+        }, 1000);
+
+	</script>
+</body>
+
+</html>
