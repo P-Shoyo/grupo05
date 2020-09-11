@@ -1,4 +1,4 @@
-# 'Ammonimus Inc.' :shipit:
+# 'Amonimous Inc.' :shipit:
 
 ## Projeto de Pesquisa e Inovação I
 
