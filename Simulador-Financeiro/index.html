@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+</head>
+<body>
+<div id="calculadora" style="background-color:#D6BF23; width: 250px; height: 250px;" >    
+    <div id="inputs">
+        Volume de nitrato de Amônio: <br> <br>
+        <input id="valor_lotes" type="text" placeholder="Toneladas" style="width: 200px;"><BR></BR>
+        Preço de Compra: <br> <br>
+        <input id="qtd_lotes" type="text" placeholder="US$/R$ " style="width: 200px;" > <BR></BR>   
+    </div>
+    <div id="buttons">
+        <button onclick="calcular()" style="background-color: #62B6AA;">Calcular</button> 
+    </div><BR>
+    <div id="resultado" style="background-color: black; color: #D6BF23;">  </div>
+</div>
+</body>
+</html>
+
+<script>
+
+function calcular() {
+    var valor = valor_lotes.value * qtd_lotes.value
+
+    resultado.innerHTML = `O valor do seu prejuízo é de: <br> US$ ${valor} `
+
+}
+
+</script>
