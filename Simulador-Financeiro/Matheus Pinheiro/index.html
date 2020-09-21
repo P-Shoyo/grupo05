@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <div class="titulo">
+            <h1>Calculadora Financeira </h1>
+        </div>
+        <div class="calculo">
+            <h3> Altura do armazém(m):</h3>
+            <input id="altura" type="text" placeholder="Ex:20">
+            <br>
+            <h3> Comprimento do armazém(m):</h3>
+            <input id="largura" type="text " placeholder="Ex:30"> 
+            <br>
+            <h3> Largura do armazém(m):</h3>
+            <input id="comprimento" type="text" placeholder="Ex:50"><br> <br>
+        <button onclick="calcular()">Calcular</button>
+            
+        </div>
+        <div id="resultado">
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function calcular() {
+
+        var m3 = altura.value * largura.value * comprimento.value
+        var arduino = 100
+        var qtd_arduino = m3 / 3
+        var total = qtd_arduino * arduino * 1.05
+        resultado.innerHTML = ` <b> O serviço será de aproximadamente R$${total.toFixed(2)}* </b> 
+                                <br> <br> 
+                                <u> * O custo pode variar de acordo com a quantidade de horas da instalação. </u>`
+
+    }
+
+</script>
