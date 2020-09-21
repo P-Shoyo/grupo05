@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A6A6A6
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    background-color: #171717;
+    width: 100%;
+    height: 90px;
+    padding-top: 10px;
+}
+
+.container1 {
+    width: 90%;
+    height: 70px;
+    /* margin-left: 100px; */
+    margin: auto;
+    /* Se colocar a margem em pixels antes, o auto não reconhece */
+}
+
+.container2 {
+    width: 50%;
+    height: 83%;
+    float: left;
+}
+
+.container3 {
+    width: 50%;
+    height: 83%;
+    float: right;
+}
+
+.cont_31 {
+    height: 10%;
+}
+
+.cont_32 {
+    height: 80%;
+    width: 75%;
+    background-color: #D6BF23;
+    margin-left: 12.5%;
+}
+
+.filha_32 {
+    width: 90%;
+    height: 100%;
+    /* top right bottom left*/
+    padding: 4% 0% 0% 4.5%;
+}
+
+.div_botao {
+    padding: 6% 0% 4.5% 0%;
+}
+
+.cont_33 {
+    height: 10%;
+}
+
+.logotipo {
+    float: left;
+    margin-left: 0;
+    height: 64px;
+}
+
+.botao_sair {
+    float: right;
+    margin: 0px;
+    height: 64px;
+}
+
+.titulo {
+    width: 90%;
+    /* top right bottom left*/
+    padding: 20px 0px 0px 20px;
+}
+
+.calculadora {
+    width: 40%;
+    padding-top: 25px;
+    margin-left: 30%;
+}
+
+.user {
+    float: right;
+    height: 25px;
+    /* top right bottom left*/
+    padding: 1.5% 1% 0% 1%;
+}
+
+/* Outline é a borda quando clica na caixinha */
+.entrada {
+    border: 0 none;
+    outline-color: #62B6AA;
+    background-color: #D9D9D9;
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.desc_entrada {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.div_resposta {
+    background-color: black;
+    height: 22%;
+    color: #D6BF23;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    /* top right bottom left*/
+    /* padding: 1% 0% 1% 1%; */
+    padding: 1% 0;
+    /* Align-items centraliza verticalmente
+    align-items: center;
+    display: flex; */
+}
+
+.nav ul {
+    float: left;
+    margin: auto;
+    color: #A6A6A6;
+}
+
+.nav a {
+    /* Vai tirar o sublinhado do link */
+    text-decoration: none;
+    color: #A6A6A6;
+    /* Deixar tudo em caixa alta */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav .lista1 li {
+    margin-left: 50px;
+    list-style: none;
+    display: inline-block;
+    /* top right bottom left*/
+    padding: 25px 5px 0px 5px;
+}
+
+.nav .sair {
+    float: right;
+    /* top right bottom left*/
+    padding: 25px 5px 0px 5px;
+}
+
+.header .nav .current a {
+    color: #D6BF23;
+}

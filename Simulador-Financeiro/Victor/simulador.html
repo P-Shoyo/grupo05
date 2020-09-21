@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container1">
+            <!-- <div class="title-header"><h1><span class="current">Amonimous</span> INC</h1></div> -->
+            <a href="simulador.html"><img class="logotipo" src="img/logo.png" alt="Amonimous INC"></a>
+            <div class="nav">
+                <ul class="lista1">
+                    <!-- A tag <a> pode ser usada para fazer um link -->
+                    <li><a href="simulador.html">Início</a></li>
+                    <li><a href="simulador.html">Sobre</a></li>
+                    <li><a href="simulador.html">Contato</a></li>
+                    <li><a href="simulador.html">Gráficos</a></li>
+                    <li class="current"><a href="simulador.html">Financeiro</a></li>
+                    <!-- Se usarmos o target, o link abre a URL em outra guia
+                    <li><a href="https://htmlcolorcodes.com" target="_blank">Serviços</a></li> -->
+                </ul>
+                <a href="simulador.html"><img class="botao_sair" src="img/sair.png" alt="Botão para sair"></a>
+                <a class="sair" href="simulador.html">Sair</a>
+            </div> 
+        </div>
+    </div>
+    <div class="container2">
+        <img class="titulo" src="img/titulo.png" alt="Simulador Financeiro">
+        <img class="calculadora" src="img/calculator.png" alt="Calculadora">
+    </div>
+
+    <div class="container3">
+        <div class="cont_31">
+            <img class="user" src="img/user.png" alt="Usuário">
+            <b style="font-size: 20px; color:#393839; float: right; padding-top: 1.5%">Olá, Usuário!</b>
+        </div>
+        <div class="cont_32">
+            <div class="filha_32">
+                <div style="height: 50%">
+                    <b>INFORME AS DIMENSÕES DO LOCAL DE ARMAZENAGEM (EM METROS):</b><br><br>
+                    <b class="desc_entrada">Altura:</b><br>
+                    <input class="entrada" id="altura" type="text" placeholder="(em metros)">
+                    <b class="desc_entrada">Largura:</b><br>
+                    <input class="entrada" id="largura" type="text" placeholder="(em metros)">
+                    <b class="desc_entrada">Comprimento:</b><br>
+                    <input class="entrada" id="comprimento" type="text" placeholder="(em metros)">
+                </div>
+                <div class="div_botao" style="height: 5%">
+                    <button style="background-color: #62B6AA; outline-color: #62B6AA; border-style: none; height: 30px" 
+                    onclick="calcular()"><b>CALCULAR</b></button>
+                </div>
+                <div id="resposta" class="div_resposta">
+                </div>
+            </div>
+        </div>
+        <div class="cont_33">
+            <div style="text-align: center; padding-top: 3%">
+                <b style="text-transform: uppercase; font-size: 12px; color:white">
+                    *O custo pode variar de acordo com a 
+                    quantidade de horas de instalação.
+                </b>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function calcular() {
+        var vol_galpao = Number(altura.value) * Number(largura.value) * Number(comprimento.value);
+        var num_arduinos = (vol_galpao) / 2;
+        var prec_arduino = Number(100);
+        var prec_hora = Number(1000);
+        // R$100,00 = Preço unitário do arduíno
+        // R$1.000,00 = Preço de instalação / hora
+        var prec_servico = (Number(prec_arduino) + Number(prec_hora)) * Number(num_arduinos);
+        resposta.innerHTML = `Para um armazém com <span style="color: #62B6AA">${vol_galpao} m³</span>, serão necessários<br>
+                             <span style="color: #62B6AA">${num_arduinos} arduínos</span> para um monitoramento adequado.<br><br>
+                             Assim, o serviço custará, aproximadamente:<br>
+                             <span style="font-size: 20px; color: #62B6AA">R$${prec_servico},00*</span>`
+    }
+</script>
