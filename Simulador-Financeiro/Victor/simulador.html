@@ -75,13 +75,12 @@
         var vol_galpao = Number(altura.value) * Number(largura.value) * Number(comprimento.value);
         var num_arduinos = (vol_galpao) / 2;
         var prec_arduino = Number(100);
-        var prec_hora = Number(1000);
         // R$100,00 = Preço unitário do arduíno
-        // R$1.000,00 = Preço de instalação / hora
-        var prec_servico = (Number(prec_arduino) + Number(prec_hora)) * Number(num_arduinos);
+        // Taxa de serviço 5% -> multiplicamos por 1,05 para já aplicar a taxa ao valor total
+        var prec_servico = Number(prec_arduino) * Number(num_arduinos) * Number(1.05);
         resposta.innerHTML = `Para um armazém com <span style="color: #62B6AA">${vol_galpao} m³</span>, serão necessários<br>
-                             <span style="color: #62B6AA">${num_arduinos} arduínos</span> para um monitoramento adequado.<br><br>
+                             <span style="color: #62B6AA">${num_arduinos.toFixed(0)} arduínos</span> para um monitoramento adequado.<br><br>
                              Assim, o serviço custará, aproximadamente:<br>
-                             <span style="font-size: 20px; color: #62B6AA">R$${prec_servico},00*</span>`
+                             <span style="font-size: 20px; color: #62B6AA">R$${prec_servico}*</span>`
     }
 </script>
