@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora financeira</title>
+</head>
+<body style="background-color: yellow;"></body>
+
+        
+    <div style="border: black;background-color: yellow;width: 40%;"><b>Simulação do valor de Implementaçãp do sistema de monitoramento</b></div>
+    <br>
+    <h3>Nos informe a altura do galpão/armazém:</h3>
+    <input id="altura" type="text" placeholder="inserir um valor"><br>
+    <h3>Nos informe a largura do galpão/armazém:</h3>
+    <input id="largura" type="text" placeholder="inserir um valor"><br>
+    <h3>Nos informe o comprimento do galpão/armazém</h3>
+    <input id="comprimento" type="text" placeholder="inserir um valor"><br>
+    <button onclick="calcular()">Calcular</button>
+    <div id="mens"></div>
+    <div><i>"O Custo pode variar dependendo do tempo da implementação total, detalhes e consulta de um dos nossos vendedores</i></div>
+</body>
+</html>
+<script>
+function calcular() {
+    var valume = altura.value * largura.value * comprimento.value;
+    var arduino = 600; 
+    var inst = (valume/2) * arduino;
+    mens.innerHTML = `o custo de implementação dos nosso sistemas para o seu galpão fica aproximadamente: R$ ${inst}`
+} 
+
+</script>
