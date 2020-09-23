@@ -31,6 +31,80 @@ html, body {
     float: left;
 }
 
+.filha2 {
+    width: 80%;
+    height: 50%;
+    background-color: #706E71;
+    /* top right bottom left*/
+    margin: 4% 0% 2% 9.5%;
+    padding-top: 2%;
+    /* padding: 3% 7% 3% 7%; */
+}
+
+.container21 {
+    width: 90%;
+    height: 80%; 
+    margin: 0% 0% 2% 5%;
+    background-color: #706E71;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+.celula11 {
+    display: block;
+    background-color: #D9D9D9;
+    width: 91%;
+    height: 25px;
+    /* top right bottom left*/
+    margin: 1% 0% 1% 4.5%;
+    padding-top: 10px;
+}
+
+.celula12 {
+    display: block;
+    background-color: #D9D9D9;
+    width: 91%;
+    height: 40px;
+    /* top right bottom left*/
+    margin: 1% 0% 1% 4.5%;
+    padding-top: 10px;
+}
+
+.celula2_esq {
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 45%;
+    height: 20px;
+    /* top right bottom left*/
+    margin: 0.5% 0% 0.5% 2%;
+    padding-top: 5px;
+    color: #6D6D6D;
+}
+
+.celula2_dir {
+    display: inline-block;
+    background-color: #D9D9D9;
+    width: 45%;
+    height: 20px;
+    /* top right bottom left*/
+    margin: 0.5% 2% 0.5% 0%;
+    padding-top: 5px;
+    color: #6D6D6D;
+}
+
+.container22 {
+    width: 82%;
+    height: 10%;
+    background-color: #706E71;
+    margin-left: 9%;
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
 .container3 {
     width: 50%;
     height: 83%;
@@ -81,10 +155,10 @@ html, body {
     padding: 20px 0px 0px 20px;
 }
 
-.calculadora {
-    width: 40%;
+.fidelidade {
+    width: 70%;
     padding-top: 25px;
-    margin-left: 30%;
+    margin-left: 14%;
 }
 
 .user {
@@ -108,8 +182,7 @@ html, body {
 }
 
 .desc_entrada {
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
