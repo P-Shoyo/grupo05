@@ -41,6 +41,38 @@
         </div>
     </div>
 
-    <div class=""></div>
+    <div class="yellowbox">
+        <div class="info">
+            <b> Informe as dimensões do seu armazém:</b>
+
+            <div class="graybox">
+                <br>
+                Altura: <br>
+                <input type="text" name="altura" id="altura" placeholder="(Em metros)" >
+            </div>
+
+            <div class="graybox">
+                <br>
+                Largura: <br>
+                <input type="text" name="largura" id="largura" placeholder="(Em metros)" >
+            </div>
+
+            <div class="graybox">
+                <br>
+                Comprimento:
+                <input type="text" name="comprimento" id="comprimento" placeholder="(Em metros)" >
+            </div>
+
+            <button onClick="calcular()">Calcular</button>
+            
+        </div>
+    </div>
 </body>
 </html>
+
+<script>
+    function calcular() {
+        var area = Number(altura.value) * Number(largura.value) * Number(comprimento.value)
+
+    }
+</script>

@@ -33,6 +33,7 @@ body{
 h2{
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
     margin: 20px;
     padding-top: 20px;
     padding-left: 60px;
@@ -91,4 +92,34 @@ h3{
     margin-top: 10px;
     padding: 25px 10px 0px 30px;
     font-size: 28px;
+}
+
+.yellowbox {
+    background-color: #D6BF23;
+    height: 630px;
+    width: 780px;
+    float: right;
+    margin: 20px 200px 0px 20px;
+}
+
+.info{
+    margin: 30px 20px 20px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.yellowbox input{
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    width: 600px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.yellowbox button{
+    background-color:#62B6AA;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
