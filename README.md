@@ -1,25 +1,21 @@
-# 'Amonimous Inc.' :shipit:
+![](https://github.com/P-Shoyo/grupo05/blob/master/Readme/1.png)
 
-## Projeto de Pesquisa e Inovação I
+# Bem-vindo(a) ao nosso repositório!
 
-### 1ADS-B – Grupo 05
+Nosso projeto visa, através da utilização de sensores de temperatura (LM35) e umidade (DHT11) em arduinos, propiciar um monitoramento adequado do seu armazém de nitrato de amônio. Tudo isso é feito através de uma <i>dashboard</i> que gera relatórios diários personalizados. Desta forma, você garante a <b>segurança do seu negócio, dos seus trabalhadores e do meio ambiente.</b>
 
-- Bruno Pinheiro Alves Teixeira
-- Isabella Pires Silva	
-- Luan Collyns Sousa Silva	
-- Matheus Pinheiro Barbosa
-- Nilton Rodrigo dos Santos Santana	
-- Priscila Choi
-- Tabata Fernanda dos Santos Silva	
-- Victor Pederzini	
- 
-**PROJETOS PARA EMPRESAS (B2B)**
+# Como funciona nossa solução?
 
-1. Tema
-   - Controle de temperatura e umidade para fins de armazenamento de nitrato de amônio
+O esquema abaixo demonstra de maneira dinâmica como sua empresa pode utilizar nossa solução:
 
-2. Sensores necessários
-   - DHT11 e LM35 (mais sensível às oscilações de temperatura)
+![](https://github.com/P-Shoyo/grupo05/blob/master/Readme/2.png)
 
-3. Problemática
-   - Exposição de pessoas a riscos no caso de mal armazenamento de nitrato de amônio. Historicamente, temos a ocorrência de diversos casos de explosões que fizeram várias vítimas
+# Conheça nossa equipe!
+
+![](https://github.com/P-Shoyo/grupo05/blob/master/Readme/3.png)
+
+# Saiba mais
+
+Através deste QR Code, você tem acesso a toda a documentação do projeto, podendo conhecer um pouco mais sobre o contexto envolvendo o nitrato de amônio, a justificativa de nosso projeto e todo o <i>backlog</i>:
+
+![](https://github.com/P-Shoyo/grupo05/blob/master/Readme/4.png)
