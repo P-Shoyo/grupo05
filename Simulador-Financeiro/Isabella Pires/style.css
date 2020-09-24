@@ -1,17 +1,20 @@
 body{
-    background-color: rgb(95, 95, 95);
+    background-color:rgb(110, 108, 108);  
     font-family: 'Times New Roman', Times, serif;
 
 }
 
 .calculadora{
-    background-color: #d4a628;
-    width: 450px;
-    height: 400px;
+    background-color:rgb(255, 217, 0);
+    width: 350px;
+    height: 350px;
     margin: auto;
     margin-top: 150px ;
-    padding-left: 15px;
-    border-radius: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+
 }
 
 .calculadora input {
@@ -23,12 +26,11 @@ body{
     margin-left: 30px;
 }
 .calculadora button{
-    margin-left: 175px;
-    width: 75px;
+    margin-left: 0;
+    width: 70px;
     height: 30px;
     background-color: #62B6AA;
-    border-radius: 10px;
-    border: none;
+    border: black;
     
     
     

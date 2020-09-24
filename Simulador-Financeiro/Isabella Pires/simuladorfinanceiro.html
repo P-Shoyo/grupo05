@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <div class="calculadora">
+        <div class="titulo">
+            <h1>Simulador Financeiro</h1>
+        </div>
+        
+        <div class="calculo">
+            <h3> Inserir altura do armazém: </h3>
+            <input id="altura" 
+                   type="text"
+                   placeholder="Em metros">
+            <br><br><br>
+            <h3> Inserir comprimento do armazém: </h3>
+            <input id="Comprimento" 
+                   type="text " 
+                   placeholder="Em metros"> 
+            <br><br><br>
+            <h3> Inserir largura do armazém: </h3>
+            <input id="largura" 
+                   type="text" 
+                   placeholder="Em metros" >
+                   <br> <br> <br>
+
+        <button onclick="calcular()"> Calcular </button>
+            
+        </div>
+        <div id="valor">
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function calcular() {
+
+        var m3 = altura.value * largura.value * comprimento.value
+        var arduino = 100
+        var qtd_arduino = m3 / 3
+        var total = qtd_arduino * arduino * 1.05
+        valor.innerHTML = ` <b> O valor do serviço será de aproximadamente R$${total.toFixed(2)}* </b> 
+                                <br> <br> 
+                                <u> *O custo pode variar de acordo com a quantidade de horas da instalação. </u>`
+
+    }
+
+</script>
