@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+</head>
+<body style="background-color: gray">
+    <div 
+        style="background-color: yellow;
+                width: 50%;
+                height: auto;
+                margin:auto;
+                font-size: 24px; ">
+        <b>Simulador de valor de Implementação do sistema de monitoramento </b> 
+    </div>
+    <br>
+    <div style="background-color: darkkhaki;margin-left: 25%; width: 50%;height: auto; border-radius: 5%;border-style: solid;">
+    <div style="width: 50%;margin-left:8%;">
+        <b style="font-size: 24px;">Insira a altura do galpão/armazém:</b> <br>
+        <input id="altura" type="text"><br>
+        <b style="font-size: 24px;">Insira a largura do galpão/armazém:</b> <br>
+        <input id="largura" type="text"><br>
+        <b style="font-size: 24px;">Insira o comprimento do galpão/armazém:</b> <br>
+        <input id="comprimento" type="text"><br>
+        <button onclick="calcular()">Calcular</button><br>
+    
+    </div>
+</div>
+    <div id="mens" style="width: 50%;margin-left:40%"></div><br>
+    <div style="width: 50%;margin-left:25%"><u style="font-size: 28px;">*O custo pode variar de acordo com o tempo necessário para a implementação total, mais detalhes, consulte um de nossos vendedores.</u></div>
+</body>
+</html>
+<script>
+    function calcular() {
+        var volume = altura.value * largura.value * comprimento.value;
+        var arduino = 100;
+        var inst = ((volume/3) * arduino) * 1.05;
+        var qtArduino = (volume/3);
+        mens.innerHTML = `<b> Nesse armazém de volume ${volume} o custo de implementação do nosso sistema em seu galpão fica, em aproximadamente:R$ ${inst.toFixed(2)} 
+                         e será utilizado ${qtArduino.toFixed(0)} arduinos</b>`;
+    }
+    
+
+
+
+
+</script>
