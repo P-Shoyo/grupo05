@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="#"><img src="img/logo.png" class="logo" alt="Logo da empresa"></a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Gráficos</a></li>
+                    <li class="current"><a href="#">Financeiro</a></li>
+                    <li class="cad"><a href="#">Cadastro</a></li>
+                    <li class="login"><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="calc">
+        <div class="content">
+            <b class="desc">INFORME AS DIMENSÕES DO LOCAL DE <br>ARMAZENAGEM (EM METROS):</b>
+            <br><br>
+            <p>ALTURA:</p>
+            <input type="text" placeholder="(EM METROS)" id="altura">
+            <br>
+            <p>COMPRIMENTO:</p>
+            <input type="text" placeholder="(EM METROS)" id="comprimento">
+            <br>
+            <p>LARGURA:</p>
+            <input type="text" placeholder="(EM METROS)" id="largura">
+            <br>
+            <button onclick="calcular()">CALCULAR</button>
+
+            <div id="resposta">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var volume = altura.value * comprimento.value * largura.value;
+        var servico = ((volume / 3 * 100) * 1.05).toFixed(2);
+        var arduinos = volume / 3;
+
+        resposta.innerHTML = `<p>PARA UM ARMAZÉM DE <span>${volume} M³, </span>SERÃO NECESSÁRIOS 
+                            <span>${arduinos} ARDUINOS</span> PARA UM MONITORAMENTO ADEQUADO.</p>
+                            <p>ASSIM, O SERVIÇO CUSTARÁ, APROXIMADAMENTE: <span>R$${servico}*</span></p>`;
+    }
+</script>
