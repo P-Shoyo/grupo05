@@ -96,10 +96,10 @@ h3{
 
 .yellowbox {
     background-color: #D6BF23;
-    height: 630px;
+    height: 670px;
     width: 780px;
     float: right;
-    margin: 20px 200px 0px 20px;
+    margin: -20px 200px 0px 20px;
 }
 
 .info{
@@ -123,3 +123,21 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
+.yellowbox p{
+    font-size: 15px;
+    color: white;
+}
+
+.blackbox {
+    background-color: #161616;
+    height: 100px;
+    width: 590px;
+    /* float: right; */
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;   
+    color: white; 
+}
+
+

@@ -63,7 +63,13 @@
                 <input type="text" name="comprimento" id="comprimento" placeholder="(Em metros)" >
             </div>
 
-            <button onClick="calcular()">Calcular</button>
+            <button onClick="calcular()">Calcular</button> <br>
+
+            <div class="blackbox" id="div_mens" style="padding: 10px;"> 
+                Qual o seu orçamento?
+            </div>
+
+            <p>**Orçamento pode variar de acordo com a quantidade de horas de instalação.</p>
             
         </div>
     </div>
@@ -72,7 +78,15 @@
 
 <script>
     function calcular() {
-        var area = Number(altura.value) * Number(largura.value) * Number(comprimento.value)
 
+        var volume = Number(altura.value) * Number(largura.value) * Number(comprimento.value);
+        var arduino = 100;
+        //valor da instalação
+        var inst = ((volume/3) * arduino) * 1.05;
+        // quantidade de arduino necessario
+        var qntArduino = (volume/3);
+
+        div_mens.innerHTML = `Para um armazém de <span style='color:#62B6AA'> ${volume}m³</span>, será necessário utilizar <span style='color:#62B6AA'>${qntArduino.toFixed(0)} arduínos </span>.
+        O orçamento do nosso serviço será aproximadamente de <b style='color:#62B6AA'> R$${inst.toFixed(2)}**</b>. `
     }
 </script>
