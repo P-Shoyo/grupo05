@@ -31,6 +31,7 @@ body{
 }
 
 .title-header{
+    display: flex;
     float: left;
     color: #ffffff;
     height: 100px;
@@ -39,8 +40,13 @@ body{
 }
 
 .title-header h1{
-    font-size: 25px;
+    font-size: 15px;
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 32px;
+    width: 201px;
+    left: 125px;
+    top: 39px;
 }
 
 .logo-imagem {
