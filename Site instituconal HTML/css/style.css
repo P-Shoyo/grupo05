@@ -5,9 +5,7 @@ body{
 }
 
 .container{
-    width: 80%;
     margin: auto;
-
     height: 50px;
 }
 
@@ -17,8 +15,14 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: yellow solid 5px;
+  
 }
 
+.header img {
+    width: 10%;
+    height: 175%;
+    float: left;
+}
 .header .nav .current a,
 .header span {
     color: yellow;
@@ -33,6 +37,12 @@ body{
 .title-header{
     float: left;
     color: #ffffff;
+}
+
+.title-header h1{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .nav{
@@ -67,5 +77,5 @@ body{
     text-align: center;
     min-height: 540px;
     min-width: 1100px;
-    filter: blur(3px);
+    filter: blur(2px);
 }
