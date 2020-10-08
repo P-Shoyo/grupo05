@@ -18,11 +18,7 @@ body{
   
 }
 
-.header img {
-    width: 10%;
-    height: 175%;
-    float: left;
-}
+
 .header .nav .current a,
 .header span {
     color: yellow;
@@ -37,12 +33,24 @@ body{
 .title-header{
     float: left;
     color: #ffffff;
+    height: 100px;
+    width: 100px;
+    padding-top: 0px;
 }
 
 .title-header h1{
-    font-size: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.logo-imagem {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    float: left;
+    left: 43px;
+    bottom:58px;
+    top: -25px;
 }
 
 .nav{
@@ -77,10 +85,6 @@ body{
     text-align: center;
     min-height: 540px;
     min-width: 1100px;
-<<<<<<< HEAD
-    filter: blur(2px);
-}
-=======
 }
 
 .showcase h1{
@@ -101,4 +105,3 @@ body{
     color: #ffffff;
     padding: 30px 0px 30px 0px;
 }
->>>>>>> 166389ee21c563a4bf3f1a2c743278ea3945d1d4
