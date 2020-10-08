@@ -67,5 +67,23 @@ body{
     text-align: center;
     min-height: 540px;
     min-width: 1100px;
-    filter: blur(3px);
+}
+
+.showcase h1{
+    margin: 0;
+    font-size: 55px;
+    padding-top: 290px;
+    padding-left: 750px;
+}
+
+.showcase p{
+    font-size: 22px;
+    padding-left: 750px;
+    text-align: right;
+}
+
+.new{
+    background-color:#232323;
+    color: #ffffff;
+    padding: 30px 0px 30px 0px;
 }
