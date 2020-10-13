@@ -7,9 +7,11 @@ body {
 
 
 .header/*Barra preta*/{
+    position: fixed;
     display: flex;
     margin: auto;
     height: 10vh;
+    width: 100vw;
     background-color: #232323;
     align-items: center;
     justify-content: space-around;
@@ -22,7 +24,7 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
-    height: 89vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -82,7 +84,7 @@ body {
     margin-left: 210px;
     margin-bottom: 0px;
     font-size: 55px;
-    padding-top: 290px;
+    padding-top: 410px;
     padding-left: 750px;
 }
 
@@ -111,4 +113,31 @@ body {
     background-color: #232323;
     color: #ffffff;
     padding: 30px 0px 30px 0px;
+}
+
+.sobreNos{
+    background: url(../img/Sobre.png) bottom no-repeat;
+    background-size: cover;
+    height: 99vh;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.txt_snh1{
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-left: 210px;
+    margin-bottom: 0px;
+    font-size: 55px;
+    padding-top: 200px;
+    padding-left: 750px;
+}
+
+.txt_snh2{
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 100px;
+    text-align: right;
 }
