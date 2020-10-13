@@ -18,7 +18,11 @@ body {
     border-bottom: yellow solid 5px;
 
 }
+.transparencia{
+    background: rgba(0, 0, 0, 0.4);  
+   }
 
+   
 .showcase /*Aqui é onde fica a img de fundo*/ {
     background: url(../img/computer-2048166_1920.jpg) bottom no-repeat;
     background-size: cover;
@@ -27,6 +31,8 @@ body {
     height: 100vh;
     width: 100vw;
 }
+
+
 
 /* Estilização tanto da lista de menus quanto do AMONIMOUS INC */
 .title-header h1,
@@ -72,6 +78,14 @@ body {
     Top: 31px;
     Left: 1267px;
     border-Radius: 7px
+}
+
+.login{
+    border-radius: 5px;
+    background-color: yellow;
+    height: 44px;
+    width: 102px;
+    padding-top: 6px;
 }
 
 
