@@ -1,0 +1,33 @@
+/* DIMENSÕES E FONTES DO CORPO GERAL DO SITE*/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA DE MENU PRETA */
+.header {
+    display: flex;
+    margin: auto;
+    height: 10vh;
+    background-color: #232323;
+    align-items:center;
+    justify-content: space-around;   
+}
+
+.logo-principal {
+    width:60px;
+}
+
+.title-header {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.title-header h1 {
+    font-size: 15px;
+    color: white;
+}
+
