@@ -175,3 +175,14 @@ body {
     border: 2px;
     border-radius: 100%;
 }
+
+.tela-contato{
+    background: url(../img/Contato.png) bottom no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+}
