@@ -95,6 +95,7 @@ body {
 
 .nav a {
     text-decoration: none;
+    font-style: initial;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 18px;
