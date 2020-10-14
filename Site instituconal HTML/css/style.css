@@ -15,7 +15,7 @@ body {
     background-color: #232323;
     align-items: center;
     justify-content: space-around;
-    border-bottom: yellow solid 5px;
+    border-bottom: #FBFF47 solid 5px;
 
 }
 .transparencia{
@@ -28,8 +28,20 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    padding-top: 33px;
+}
+
+.showcase p /*Texto abaixo*/
+    {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-right: 100px;
+    text-align: right;
+    margin-bottom: 0px;
+
 }
 
 
@@ -80,12 +92,12 @@ body {
     border-Radius: 7px
 }
 
-.login{
+.nav .login{
     border-radius: 5px;
-    background-color: yellow;
+    background-color: #FBFF47;
     height: 44px;
     width: 102px;
-    padding-top: 6px;
+    padding: 3px 9px;
 }
 
 
@@ -103,24 +115,25 @@ body {
 }
 
 .linha-um /*estilização da linha home*/{
-    background-color: yellow;
+    background-color: #FBFF47;
     height: 5px;
     width: 140px;
     margin-right: 100px;
     margin-top: 0px;
     margin-bottom: 0px;
-    border: yellow;
+    border: #FBFF47;
     border-radius: 23px;
 }
-
-.showcase p /*Texto abaixo*/
-    {
-    font-size: 22px;
-    margin-top: 15px;
-    margin-left: 0px;
+/* estilização da linha sobre nós */
+.linha-dois {
+    background-color: #232323;
+    height: 5px;
+    width: 140px;
     margin-right: 100px;
-    text-align: right;
-
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border:  #232323;
+    border-radius: 23px;
 }
 
 .new {
@@ -154,4 +167,11 @@ body {
     margin-left: 0px;
     margin-right: 100px;
     text-align: right;
+}
+
+/* imagens time */
+.timeFotos{
+    height: 200px;
+    border: 2px;
+    border-radius: 100%;
 }
