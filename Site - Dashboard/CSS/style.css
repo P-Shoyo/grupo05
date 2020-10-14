@@ -9,25 +9,52 @@ body {
 /* BARRA DE MENU PRETA */
 .header {
     display: flex;
-    margin: auto;
-    height: 10vh;
+    margin-right: 195vh;
+    height: 99vh;
     background-color: #232323;
-    align-items:center;
-    justify-content: space-around;   
+    justify-content: space-around; 
+    border-bottom: yellow solid 5px;
+
 }
 
+/* TAMANHO DA LOGO */
 .logo-principal {
-    width:60px;
+    width:100px;
 }
 
+/* POSICIONAMENTO E ESTILIZAÇÃO DO ESPAÇO DO TÍTULO */
 .title-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding: 4vh;
     color: #ffffff;
 }
 
+/* FONTE E ESTILIZAÇÃO DO TÍTULO "AMONIMOUS" */
 .title-header h1 {
     font-size: 15px;
     color: white;
 }
+
+/* ATRIBUIÇÃO DE MARGEM E POSICIONAMENTO DO TITULO E DA NAVEGAÇÃO*/
+.title-header h1,
+.nav ul {
+    margin: 0;
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+
+
+
 
