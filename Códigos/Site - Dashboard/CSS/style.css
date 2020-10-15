@@ -15,10 +15,10 @@ body {
 /* BARRA DE MENU PRETA */
 .header {
     display: flex;
-    margin-right: 195vh;
-    height: 99vh;
+    float:left;
+    height: 99vh; 
     background-color: #232323;
-    justify-content: space-around; 
+    /* justify-content: space-around; */ 
     border-bottom: yellow solid 5px;
 
 }
@@ -40,25 +40,17 @@ body {
 .title-header h1 {
     font-size: 15px;
     color: white;
+    margin: 0;
 }
 
-/* ATRIBUIÇÃO DE MARGEM E POSICIONAMENTO DO TITULO E DA NAVEGAÇÃO*/
-.title-header h1,
-.nav ul {
-    margin: 0;
-    float: left;
+.grafico-linha {
+    width:60px;
 }
 
 .nav {
     float: right;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-
-}
 
 
 
