@@ -74,10 +74,39 @@ body {
 }
 
 .google {
-    width:150px;
+    width:120px;
 
 }
 
+.login {
+    padding-left:60px;
+}
+
+.login label {
+    color:#FBFF47;
+    font-size:18px;
+}
+.login input {
+    border-radius:10px;
+    padding: 7px;
+}
+
+.bt {
+    width:100px;
+    height:40px;
+    border-radius: 30px;
+    margin-left:220px;
+    color:black;
+    background-color:#FBFF47;
+    border-color: #FBFF47;
+    font-size:15px;
+}
+
+.final-login label{
+    color:#FBFF47;
+    font-size:16px;
+    margin-left:105px;
+}
 
 /* FIM CONTEÚDO DA PÁGINA */
 
