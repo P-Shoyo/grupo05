@@ -163,9 +163,9 @@ body {
 .linha-acima{
     background-color: #232323;
     height: 5px;
-    width: 1400px;
-    margin-right: 100px;
-    margin-top: 20px;
+    width: 100%;
+    margin-right: 100%;
+    margin-top: 0px;
     border: #232323;
     border-radius: 23px;
 }
@@ -218,10 +218,10 @@ body {
     border-radius: 100%;
 }
 
-<<<<<<< HEAD
 .flutuar{
     float: left;
-=======
+}
+
 .tela-contato {
     background: url(../img/Contato.png) bottom no-repeat;
     background-size: cover;
@@ -230,6 +230,4 @@ body {
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
-}
->>>>>>> c6c6e42f264dbe636b6c8a2f2782de087d60a584
 }
