@@ -41,6 +41,7 @@ body {
     margin-right: 100px;
     text-align: right;
     margin-bottom: 0px;
+    padding-bottom: 110px;
 
 }
 
@@ -110,7 +111,7 @@ body {
     margin-left: 210px;
     margin-bottom: 0px;
     font-size: 55px;
-    padding-top: 410px;
+    padding-top: 300px;
     padding-left: 750px;
 }
 
@@ -174,4 +175,8 @@ body {
     height: 200px;
     border: 2px;
     border-radius: 100%;
+}
+
+.flutuar{
+    float: right;
 }
