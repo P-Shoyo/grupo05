@@ -218,8 +218,14 @@ body {
     border-radius: 100%;
 }
 
+/* float nas imagens para ficarem ao lado uma das outras */
 .flutuar{
     float: left;
+}
+
+/* mesma coisa que nas imagens porém nos nomes */
+.flutuar h1{
+    margin-left: 100px;
 }
 
 .tela-contato {
@@ -231,3 +237,10 @@ body {
     margin-left: 0px;
     padding: 0px;
 }
+
+/* centralização das imagens do time */
+.primeira-linha, .segunda-linha {
+    margin: 0 auto;
+    width: fit-content;
+}
+
