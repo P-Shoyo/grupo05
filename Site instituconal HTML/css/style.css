@@ -6,7 +6,10 @@ body {
 }
 
 
-.header/*Barra preta*/{
+.header
+
+/*Barra preta*/
+    {
     position: fixed;
     display: flex;
     margin: auto;
@@ -18,22 +21,28 @@ body {
     border-bottom: #FBFF47 solid 5px;
 
 }
-.transparencia{
-    background: rgba(0, 0, 0, 0.4);  
-   }
 
-   
-.showcase /*Aqui é onde fica a img de fundo*/ {
+.transparencia {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.showcase
+
+/*Aqui é onde fica a img de fundo*/
+    {
     background: url(../img/computer-2048166_1920.jpg) bottom no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
-    height: 100%;
+    height: 110%;
     width: 100%;
     padding-top: 33px;
 }
 
-.showcase p /*Texto abaixo*/
+.showcase p
+
+/*Texto abaixo*/
     {
     font-size: 22px;
     margin-top: 15px;
@@ -54,27 +63,40 @@ body {
     float: left;
 }
 
-.title-header /*Grupo = Amonimous INC + Imagem do logo*/ {
+.title-header
+
+/*Grupo = Amonimous INC + Imagem do logo*/
+    {
     display: flex;
     align-items: center;
     color: #ffffff;
 }
 
-.title-header h1 /*Aqui você consegue arrumar o 'Amonimous INC' do lado do logo*/ {
+.title-header h1
+
+/*Aqui você consegue arrumar o 'Amonimous INC' do lado do logo*/
+    {
     font-size: 15px;
     color: white;
 }
 
-.logo-imagem /*Aqui é apenas o logo*/ {
+.logo-imagem
+
+/*Aqui é apenas o logo*/
+    {
     height: 60px;
 }
 
-.nav /*Grupo de LI's*/{
+.nav
+
+/*Grupo de LI's*/
+    {
     float: right;
 }
 
 .nav a {
     text-decoration: none;
+    font-style: initial;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 18px;
@@ -93,7 +115,7 @@ body {
     border-Radius: 7px
 }
 
-.nav .login{
+.nav .login {
     border-radius: 5px;
     background-color: #FBFF47;
     height: 44px;
@@ -103,8 +125,8 @@ body {
 
 
 
-.texto-h1
 /*Amonimous da lateral maior*/
+.texto-h1
     {
     margin-top: 0px;
     margin-right: 100px;
@@ -115,7 +137,10 @@ body {
     padding-left: 750px;
 }
 
-.linha-um /*estilização da linha home*/{
+.linha-um
+
+/*estilização da linha home*/
+    {
     background-color: #FBFF47;
     height: 5px;
     width: 140px;
@@ -125,17 +150,8 @@ body {
     border: #FBFF47;
     border-radius: 23px;
 }
-/* estilização da linha sobre nós */
-.linha-dois {
-    background-color: #232323;
-    height: 5px;
-    width: 140px;
-    margin-right: 100px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border:  #232323;
-    border-radius: 23px;
-}
+
+
 
 .new {
     background-color: #232323;
@@ -143,7 +159,19 @@ body {
     padding: 30px 0px 30px 0px;
 }
 
-.sobreNos{
+
+.linha-acima{
+    background-color: #232323;
+    height: 5px;
+    width: 1400px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border: #232323;
+    border-radius: 23px;
+}
+
+/* background da tela sobre nós */
+.sobreNos {
     background: url(../img/Sobre.png) bottom no-repeat;
     background-size: cover;
     height: 99vh;
@@ -152,17 +180,30 @@ body {
     padding: 0px;
 }
 
-.txt_snh1{
+/* Texto tela sobre nós H1 */
+.txt_snh1 {
     margin-top: 0px;
-    margin-right: 100px;
-    margin-left: 210px;
+    margin-left: 243px;
     margin-bottom: 0px;
     font-size: 55px;
     padding-top: 200px;
     padding-left: 750px;
 }
 
-.txt_snh2{
+/* estilização da linha sobre nós */
+.linha-dois {
+    background-color: #232323;
+    height: 5px;
+    width: 140px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: #232323;
+    border-radius: 23px;
+}
+
+/* Texto tela sobre nós H2 */
+.txt_snh2 {
     font-size: 22px;
     margin-top: 15px;
     margin-left: 0px;
@@ -171,12 +212,24 @@ body {
 }
 
 /* imagens time */
-.timeFotos{
+.timeFotos {
     height: 200px;
     border: 2px;
     border-radius: 100%;
 }
 
+<<<<<<< HEAD
 .flutuar{
     float: left;
+=======
+.tela-contato {
+    background: url(../img/Contato.png) bottom no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+>>>>>>> c6c6e42f264dbe636b6c8a2f2782de087d60a584
 }
