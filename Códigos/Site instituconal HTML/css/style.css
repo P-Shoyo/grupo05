@@ -249,3 +249,14 @@ body {
     margin: 0 auto;
     width: fit-content;
 }
+
+/* linha em baixo do sobre */
+.segunda-linha {
+    background-color: #232323;
+    height: 5px;
+    width: 100%;
+    /* margin-right: 100%; */
+    margin-top: 0px;
+    border: #232323;
+    border-radius: 23px;
+}
