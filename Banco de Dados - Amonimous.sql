@@ -1,42 +1,35 @@
 create database Amonimous;
 use Amonimous;
 
-create table Empresa (
-	idEmpresa int primary key auto_increment,
+create table Cadastro (
+	idCadastro int primary key auto_increment,
 	nomeEmpresa varchar(50),
-    telefone varchar(11),
+    CNPJ char(20),
+    telefone varchar(14),
     email varchar(40),
-	CNPJ char(14)
-);
-
-insert into Empresa values (null,'Amonimous','4002-8922','amonimous.bandtec@outlook.com','12345678901234'),
-						   (null,'susTabil','2552-4338','susTabil.bandtec@outlook.com','51278549135487'),
-                           (null,'Phos4','2113-2554','Phos4.bandtec@outlook.com','15975382460156'),
-                           (null,'HealthAnalitcs','95221-3535','HealthAnalitcs.bandtec@outlook.com','75395108246591'),
-                           (null,'CodePlanet','987853533','CodePlanet.bandtec@outlook.com','74185296301234');
-                           
-create table login (
-	idLogin int primary key auto_increment,
-    -- chave estrangeira idEmpresa
-    login varchar(40),
     senha varchar(40)
 );
 
-insert into empresa values (null,'',),
-						   (null,),
-                           (null),
-                           (null),
-                           (null);
+insert into Cadastro values (null, 'Amonimous','23.234.231/1253-45', '1198743-2312', 'amonimous@gmail.com', 'amoni123'),
+							(null, 'Microsoft','76.531.412/9873-98', '1199478-8806', 'microsoft@gmail.com', 'microsoft'),
+                            (null, 'Yara Brasil', '89.233.643/8943-67', '1198763-2341', 'yarabr@gmail.com', 'yarabr');
+                           
+create table login (
+	idLogin int primary key auto_increment,
+    fkCadastro int,
+    foreign key(fkCadastro) references Cadastro(idCadastro)
+);
 
 create table endereco (
 	idEndereco int primary key auto_increment,
-    -- chave estrangeira idEmpresa
 	nomeRua varchar(30),
     bairro varchar(30),
     CEP char(8),
     numero varchar(5),
-    UF char(2)
-);			                            
+    UF char(2),
+    fkCadastro int,
+    foreign key(fkCadastro) references Cadastro(idCadastro)
+);
  
  create table ControleTemperatura (
  id int primary key auto_increment,
@@ -81,4 +74,5 @@ DiferencaTemperatura varchar (6)
 
 insert into RelatorioTemperatura values (null, '10/10/12', '25,4', '46,8', '36,1', '21,4'),
 							  (null, '22/09/20', '22,0', '32,7', '27,3', '10,7');
-   
+                              
+drop table Cadastro;
