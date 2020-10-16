@@ -218,9 +218,13 @@ body {
 
 /* imagens time */
 .timeFotos {
-    height: 200px;
-    border: 2px;
-    border-radius: 100%;
+    height: 230px;
+   
+}
+/* Fundo tela do time */
+.container{
+    height: 95vh;
+    background-color: #232323;
 }
 
 /* float nas imagens para ficarem ao lado uma das outras */
@@ -236,16 +240,22 @@ body {
 .tela-contato {
     background: url(../img/Contato.png) bottom no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px;
 }
 
 /* centralização das imagens do time */
-.primeira-linha,
-.segunda-linha {
+.primeira-linha {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.segunda-linha{
+    display: flex;
     margin: 0 auto;
     width: fit-content;
 }
