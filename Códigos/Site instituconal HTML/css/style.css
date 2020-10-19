@@ -1,14 +1,14 @@
-/* Configurações que servem pro body inteiro */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* Configurações que servem pra tudo */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 
-.header
-
 /*Barra preta*/
+.header
     {
     position: fixed;
     display: flex;
@@ -18,43 +18,9 @@ body {
     background-color: #232323;
     align-items: center;
     justify-content: space-around;
-        
+
 
 }
-
-.transparencia {
-    background: rgba(0, 0, 0, 0.4);
-}
-
-
-.showcase
-
-/*Aqui é onde fica a img de fundo*/
-    {
-    background: url(../img/computer-2048166_1920.jpg) bottom no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    height: 110%;
-    width: 100%;
-    padding-top: 33px;
-}
-
-.showcase p
-
-/*Texto abaixo*/
-    {
-    font-size: 22px;
-    margin-top: 15px;
-    margin-left: 0px;
-    margin-right: 100px;
-    text-align: right;
-    margin-bottom: 0px;
-    padding-bottom: 110px;
-
-}
-
-
 
 /* Estilização tanto da lista de menus quanto do AMONIMOUS INC */
 .title-header h1,
@@ -67,9 +33,53 @@ body {
     color: #232323;
 }
 
-.title-header
+.showcase
+
+/*Aqui é onde fica a img de fundo*/
+    {
+    background: url(../img/computer-2048166_1920.jpg) bottom no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.showcase p
+
+/*Texto abaixo*/
+    {
+    font-size: 22px;
+    text-align: right;
+
+}
+
+/* grupo do texto home */
+.texto-lateral {
+    margin: 0px 60px 60px 0px;
+}
+
+/*Amonimous da lateral maior*/
+.texto-h1 {
+    text-align: right;
+    font-size: 55px;
+    margin: 0px;
+}
+
+/*estilização da linha home*/
+.linha-um
+    {
+    background-color: #FBFF47;
+    height: 5px;
+    margin: 0px 0px 15px 215px;
+    border: #FBFF47;
+    border-radius: 23px;
+}
 
 /*Grupo = Amonimous INC + Imagem do logo*/
+.title-header
     {
     display: flex;
     align-items: center;
@@ -130,49 +140,10 @@ body {
 }
 
 
-
-/*Amonimous da lateral maior*/
-.texto-h1 {
-    margin-top: 0px;
-    margin-right: 100px;
-    margin-left: 210px;
-    margin-bottom: 0px;
-    font-size: 55px;
-    padding-top: 300px;
-    padding-left: 750px;
-}
-
-.linha-um
-
-/*estilização da linha home*/
-    {
-    background-color: #FBFF47;
-    height: 5px;
-    width: 140px;
-    margin-right: 100px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: #FBFF47;
-    border-radius: 23px;
-}
-
-
-
 .new {
     background-color: #232323;
     color: #ffffff;
     padding: 30px 0px 30px 0px;
-}
-
-
-.linha-acima {
-    background-color: #232323;
-    height: 5px;
-    width: 100%;
-    margin-right: 100%;
-    margin-top: 0px;
-    border: #232323;
-    border-radius: 23px;
 }
 
 /* background da tela sobre nós */
@@ -180,49 +151,42 @@ body {
     background: url(../img/Sobre.png) bottom no-repeat;
     background-size: cover;
     height: 99vh;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: #232323 7px solid;
+}
+
+/* grupo texto lateral sobre nós */
+.txt-sobre-nos{
+    margin: 0px 50px 0px 0px;   
 }
 
 /* Texto tela sobre nós H1 */
 .txt_snh1 {
-    margin-top: 0px;
-    margin-left: 243px;
-    margin-bottom: 0px;
     font-size: 55px;
-    padding-top: 200px;
-    padding-left: 750px;
+    text-align: right;
 }
 
 /* estilização da linha sobre nós */
 .linha-dois {
     background-color: #232323;
     height: 5px;
-    width: 140px;
-    margin-right: 100px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     border: #232323;
     border-radius: 23px;
+    margin-left: 500px;
 }
 
 /* Texto tela sobre nós H2 */
 .txt_snh2 {
     font-size: 22px;
-    margin-top: 15px;
-    margin-left: 0px;
-    margin-right: 100px;
     text-align: right;
 }
 
-/* imagens time */
-.timeFotos {
-    height: 230px;
-   
-}
+
+
 /* Fundo tela do time */
-.container{
+.container {
     height: 95vh;
     background-color: #232323;
     padding-top: 52px;
@@ -239,19 +203,40 @@ body {
     float: left;
 }
 
+/* imagens time */
+.timeFotos {
+    height: 230px;
+}
+
 /* mesma coisa que nas imagens porém nos nomes */
 .flutuar h1 {
     margin-left: 100px;
 }
 
+<<<<<<< HEAD
 /* centralização das imagens do time */
+=======
+.tela-contato {
+    background: url(../img/Contato.png) bottom no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+/* centralização das imagens do time na linha de cima */
+>>>>>>> 928b0fb0e101d0109b2691a0d58c84d9f372b9ab
 .primeira-linha {
     display: flex;
     margin: 0 auto;
     width: fit-content;
 }
 
-.segunda-linha{
+/* centralização das imagens do time na linha debaixo */
+
+.segunda-linha {
     display: flex;
     margin: 0 auto;
     width: fit-content;
