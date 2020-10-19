@@ -182,7 +182,32 @@
     font-size: 22px;
     text-align: right;
 }
+/* div de toda a parte de valores */
+.valores-tudo{
+    background-color: #232323;
+    height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:#F4F597 05px solid;
+    border-bottom: #F4F597 5px solid;
 
+}
+/* caixinhas dentro do valores tudo correspondente as imagens e seus textos */
+
+.caixas{
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.caixas img{
+    height: 120px;
+}
+
+.caixas h3{
+    margin: 30px 0px 5px 0px;
+}
 
 
 /* Fundo tela do time */
@@ -210,10 +235,6 @@
     background: url(../img/Contato.png) bottom no-repeat;
     background-size: cover;
     height: 100vh;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 0px;
 }
 
 /* centralização das imagens do time na linha de cima */
