@@ -187,7 +187,7 @@
 
 /* Fundo tela do time */
 .container {
-    height: 95vh;
+    height: auto;
     background-color: #232323;
     padding-top: 52px;
     padding-bottom: 105px;
@@ -196,42 +196,29 @@
 .texto-sobre{
     color: #FBFF47;
     text-align: center;
-}
-
-/* float nas imagens para ficarem ao lado uma das outras */
-.flutuar {
-    float: left;
+    margin-bottom: 50px;
 }
 
 /* imagens time */
 .timeFotos {
-    height: 230px;
+    width: 200px;
 }
 
+.flutuar{
+    max-width: 200px;
+}
 /* mesma coisa que nas imagens porém nos nomes */
 .flutuar h1 {
-    margin-left: 100px;
+    text-align: center;
 }
 
-<<<<<<< HEAD
 /* centralização das imagens do time */
-=======
-.tela-contato {
-    background: url(../img/Contato.png) bottom no-repeat;
-    background-size: cover;
-    height: 100vh;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 0px;
-}
-
-/* centralização das imagens do time na linha de cima */
->>>>>>> 928b0fb0e101d0109b2691a0d58c84d9f372b9ab
 .primeira-linha {
     display: flex;
+    width: 75%;
+    text-align: center;
+    justify-content: space-between;
     margin: 0 auto;
-    width: fit-content;
 }
 
 /* centralização das imagens do time na linha debaixo */
@@ -239,8 +226,20 @@
 .segunda-linha {
     display: flex;
     margin: 0 auto;
-    width: fit-content;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.segunda-linha p{
     text-align: center;
+}
+
+#equipe{
+    color: #FBFF47;
+}
+
+.flutuar p, h1{
+    color: #ffffff;
 }
 
 
