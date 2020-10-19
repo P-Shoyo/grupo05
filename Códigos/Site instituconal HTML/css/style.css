@@ -213,10 +213,10 @@
 
 /* Fundo tela do time */
 .container {
-    height: 95vh;
+    height: auto;
     background-color: #414040;
     padding-top: 52px;
-    padding-bottom: 105px;
+    padding-bottom: 40px;
 }
 
 .texto-sobre{
@@ -267,7 +267,18 @@
 }
 
 #equipe{
-    color: #FBFF47;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.linha-tres {
+    background-color: #FBFF47;
+    height: 5px;
+    border: #FBFF47;
+    border-radius: 15px;
+    margin-left: 628px;
+    width: 86px;
 }
 
 .flutuar p, h1{
