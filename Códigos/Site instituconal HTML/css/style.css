@@ -165,6 +165,7 @@
 /* Texto tela sobre nós H1 */
 .txt_snh1 {
     font-size: 55px;
+    color: #232323;
     text-align: right;
 }
 
@@ -221,21 +222,20 @@
 .texto-sobre{
     color: #FBFF47;
     text-align: center;
-}
-
-/* float nas imagens para ficarem ao lado uma das outras */
-.flutuar {
-    float: left;
+    margin-bottom: 50px;
 }
 
 /* imagens time */
 .timeFotos {
-    height: 230px;
+    width: 200px;
 }
 
+.flutuar{
+    max-width: 200px;
+}
 /* mesma coisa que nas imagens porém nos nomes */
 .flutuar h1 {
-    margin-left: 100px;
+    text-align: center;
 }
 
 .tela-contato {
@@ -247,8 +247,10 @@
 /* centralização das imagens do time na linha de cima */
 .primeira-linha {
     display: flex;
+    width: 75%;
+    text-align: center;
+    justify-content: space-between;
     margin: 0 auto;
-    width: fit-content;
 }
 
 /* centralização das imagens do time na linha debaixo */
@@ -256,8 +258,20 @@
 .segunda-linha {
     display: flex;
     margin: 0 auto;
-    width: fit-content;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.segunda-linha p{
     text-align: center;
+}
+
+#equipe{
+    color: #FBFF47;
+}
+
+.flutuar p, h1{
+    color: #ffffff;
 }
 
 
@@ -272,6 +286,8 @@
     align-items: flex-end;
     justify-content: center;
     text-align: right;
+    border-top: #FBFF47 5px solid;
+    border-bottom: #FBFF47 5px solid;
 }
 
 .dados-contato{
@@ -294,4 +310,13 @@
     font-size: 20px;
     color: white;
     margin: 0px 0px 15px 0px;
+}
+
+footer{
+    background-color: #232323;
+    height: 70px;
+    color: #FBFF47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
