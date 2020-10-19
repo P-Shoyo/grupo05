@@ -238,9 +238,6 @@
     margin-left: 100px;
 }
 
-<<<<<<< HEAD
-/* centralização das imagens do time */
-=======
 .tela-contato {
     background: url(../img/Contato.png) bottom no-repeat;
     background-size: cover;
@@ -248,7 +245,6 @@
 }
 
 /* centralização das imagens do time na linha de cima */
->>>>>>> 928b0fb0e101d0109b2691a0d58c84d9f372b9ab
 .primeira-linha {
     display: flex;
     margin: 0 auto;
