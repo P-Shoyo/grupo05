@@ -213,7 +213,7 @@
 /* Fundo tela do time */
 .container {
     height: 95vh;
-    background-color: #232323;
+    background-color: #414040;
     padding-top: 52px;
     padding-bottom: 105px;
 }
@@ -263,10 +263,35 @@
 
 
 /* Tela de contato */
-
 .tela-contato {
     background: url(../img/Contato.png) bottom no-repeat;
     background-size: cover;
     height: 100vh;
-    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+}
+
+.dados-contato{
+    margin: 0px 90px 0px 0px;
+}
+
+.dados-contato h1{
+    font-size: 60px;
+    color: #FBFF47;
+    margin: 0px 0px 35px 0px;
+}
+
+.dados-contato h2{
+    font-size: 30px;
+    color: #FBFF47;
+    margin: 0px 0px 15px 0px;
+}
+
+.dados-contato p{
+    font-size: 20px;
+    color: white;
+    margin: 0px 0px 15px 0px;
 }
