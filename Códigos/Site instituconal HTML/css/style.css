@@ -171,7 +171,7 @@
 
 /* estilização da linha sobre nós */
 .linha-dois {
-    background-color: #232323;
+    background-color: #313131;
     height: 5px;
     border: #232323;
     border-radius: 23px;
@@ -185,7 +185,7 @@
 }
 /* div de toda a parte de valores */
 .valores-tudo{
-    background-color: #232323;
+    background-color:  #313131;
     height: 55vh;
     display: flex;
     justify-content: space-around;
@@ -213,8 +213,13 @@
 
 /* Fundo tela do time */
 .container {
+<<<<<<< HEAD
     height: auto;
     background-color: #414040;
+=======
+    height: 95vh;
+    background-color: #313131;
+>>>>>>> 19e094e43fe3d8ea39baa4551efbc78204751a3f
     padding-top: 52px;
     padding-bottom: 40px;
 }
@@ -324,7 +329,7 @@
 }
 
 footer{
-    background-color: #232323;
+    background-color: #313131;
     height: 70px;
     color: #FBFF47;
     display: flex;
