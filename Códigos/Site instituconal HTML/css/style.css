@@ -213,15 +213,9 @@
 
 /* Fundo tela do time */
 .container {
-<<<<<<< HEAD
-    height: auto;
-    background-color: #414040;
-=======
     height: 95vh;
     background-color: #313131;
->>>>>>> 19e094e43fe3d8ea39baa4551efbc78204751a3f
-    padding-top: 52px;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
 }
 
 .texto-sobre{
@@ -290,7 +284,55 @@
     color: #ffffff;
 }
 
+/* Tela do simulador financeiro */
 
+
+#financeiro {
+    position: relative;
+    background: #F4F597;
+    height: 600px;
+}
+
+/* Div arredondada contendo o título da página */
+.titulo_financeiro {
+    position: absolute;
+    z-index: 2;
+    background-color: #353535;
+    border-radius: 25px;
+    width: 700px;
+    height: 92px;
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 600;
+    padding: 10px 0px 0px 40px;
+    margin: 40px 0px 0px 40px;
+}
+
+/* Div arredondada contendo o subtítulo da página */
+.subtitulo_financeiro {
+    /* O position está como absolute para poder usar o z-index */
+    /* z-index serve para trabalhar com posições. Quanto maior o número, maior a "prioridade" */
+    /* E mais pra frente fica o objeto */
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(98, 182, 170, 0.7);
+    border-radius: 25px;
+    width: 760px;
+    height: 85px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 53px 10px 0px 30px;
+    margin: 90px 0px 0px 109px;
+}
+
+.caixinha_entradas{
+    width: 749px;
+    height: 368px;
+    border: 2px solid #62B6AA;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
 
 /* Tela de contato */
 .tela-contato {
