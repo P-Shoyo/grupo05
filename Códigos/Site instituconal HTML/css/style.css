@@ -18,8 +18,7 @@
     background-color: #232323;
     align-items: center;
     justify-content: space-around;
-
-
+    z-index: 10;
 }
 
 /* Estilização tanto da lista de menus quanto do AMONIMOUS INC */
@@ -216,6 +215,7 @@
     height: 95vh;
     background-color: #313131;
     padding-bottom: 90px;
+    border-bottom: #656565 5px solid;
 }
 
 .texto-sobre{
@@ -290,7 +290,15 @@
 #financeiro {
     position: relative;
     background: #F4F597;
-    height: 600px;
+    /* height: 600px; */
+    height: 700px;
+}
+
+/* Div para conter os títulos da tela de financeiro */
+.financeiro_titulos {
+    position: relative;
+    height: 38.5%;
+    z-index: 0;
 }
 
 /* Div arredondada contendo o título da página */
@@ -326,13 +334,60 @@
     margin: 90px 0px 0px 109px;
 }
 
+/* Div para conter todo o corpo da tela de financeiro */
+.financeiro_corpo {
+    height: 61.5%;
+    /* background-color: blue; */
+}
+
+/* Caixinha somente com as bordas para comportar os inputs do cálculo */
 .caixinha_entradas{
+    position: relative;
     width: 749px;
     height: 368px;
     border: 2px solid #62B6AA;
     box-sizing: border-box;
     border-radius: 40px;
+    float: right;
 }
+
+.caixinha_titulo {
+    position: absolute;
+    z-index: 4;
+    width: 512px;
+    height: 72px;
+    background-color: #F4F597;
+    color: #55561C;
+    /* background-color: red; */
+    margin-left: 17%;
+    padding-top: 20px;
+    top: 230px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container criado dentro do financeiro corpo para facilitar o posicionamento dos elementos */
+.container_financeiro1 {
+    height: 100%;
+    width: 63.68%;
+    float: left;
+    /* background-color: blue; */
+}
+
+#img_financeiro {
+    position: absolute;
+    z-index: 2;
+    width: 450px;
+    /* Os dois códigos abaixo foram colocados para refletir a imagem horizontalmente */
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 0px;
+    bottom: 0px;
+}
+ 
 
 /* Tela de contato */
 .tela-contato {
