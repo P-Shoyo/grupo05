@@ -252,27 +252,38 @@ body {
 /* COISA NOVA */
 
 .caixota{
-    width: 100%;
-    height: 70%;
-    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 
+
 .caixotacadastro{
-   background-color: #353535;
-   width:550px;
-   height: 500px;
-   margin: 40px;
-   border-radius:30px;
-   float: left;
-   color:#fbff47;
-   padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 18px 0px 0px 21px;
+    border-radius:20px;
+    color:#fbff47;
+    background-color: #353535;
 }
 
 .caixotacadastrogrande{
     height: 100%;
     width:50%;
-    float: left;
+    /* float: left; */
  }
+
+ .titulo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
 .caixotaimg{
     height: 100%;
@@ -289,19 +300,10 @@ body {
     font-size: 16px;
     margin-left: 10px;
     font-weight: bold;
+    line-height: 0px;
 }
 
-button{
-    margin-left:35%;
-    border-radius: 50px;
-    background-color: #fbff47;
-    font-weight: 700;
-    padding: 7px 32px;
-    margin-top: 15px;
-    border-color: #fbff47;
-    font-size: 15px;
-    text-transform: uppercase;
-}
+
 
 .entrada {
     border-radius: 10px;
@@ -314,10 +316,14 @@ label {
     text-transform: uppercase;
 }
 
-.titulo {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 10px;
+button{
+    border-radius: 13px;
+    align-self: center;
+    background-color: #fbff47;
+    font-style: normal;
+    padding: 5px 10px 8px 9px;
+    margin: 15px 0px 15px 0px;
+    border-color: #fbff47;
+    font-size: 15px;
+    text-transform: uppercase;
 }
