@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 11vh;
-    /* width: 100%; */
+    margin-bottom: 11px;
     background-color: #232323;
     border-bottom: #FBFF47 solid 5px;
 }
@@ -253,7 +253,6 @@ body {
     width:50%;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
  }
 
 
@@ -297,7 +296,6 @@ body {
 }
 .caixotaimg{
     background: url(../img/pergaminho.png) right no-repeat;
-    height: 88vh;
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -326,7 +324,17 @@ label {
     height: 14%;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+footer{
+    background-color: #313131;
+    height: 55px;
+    color: #FBFF47;
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
     justify-content: center;
 }
 
