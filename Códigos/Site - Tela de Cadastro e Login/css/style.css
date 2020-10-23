@@ -321,3 +321,12 @@ label {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
+footer{
+    background-color: #313131;
+    height: 70px;
+    color: #FBFF47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
