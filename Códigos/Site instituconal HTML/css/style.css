@@ -117,7 +117,7 @@
 
 .nav li {
     display: inline-block;
-    padding: 10px 20px 0 20px;
+    padding: 0px 20px 0 20px;
 }
 
 .nav a {
@@ -286,7 +286,7 @@
 
 /* Tela do simulador financeiro */
 
-
+/* Div contendo a tela inetira do simulador */
 #financeiro {
     position: relative;
     background: #F4F597;
@@ -340,8 +340,16 @@
     /* background-color: blue; */
 }
 
+/* Container criado dentro do financeiro corpo para facilitar o posicionamento dos elementos */
+.container_financeiro1 {
+    height: 100%;
+    width: 63.68%;
+    float: left;
+    /* background-color: blue; */
+}
+
 /* Caixinha somente com as bordas para comportar os inputs do cálculo */
-.caixinha_entradas{
+.caixinha_entradas {
     position: relative;
     width: 749px;
     height: 368px;
@@ -349,9 +357,62 @@
     box-sizing: border-box;
     border-radius: 40px;
     float: right;
+    /* background-color: red; */
 }
 
+/* Caixinha contendo a imagem dos instrumentos de medição */
+.caixinha_entradas1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+/* Imagem dos instrumentos de medição */
+#img_caixinha {
+    height: 206px;
+    display: block;
+    margin-left: 22%;
+    margin: 22% 0% 0% 22%;
+}
+
+/* Caixinha que abriga os inputs */
+.caixinha_entradas2 {
+    width: 46.5%;
+    height: 70%;
+    float: left;
+    margin: 8% 0%;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #55561C;
+}
+
+/* Estilização dos inputs */
+.caixinha_input {
+    width: 341px;
+    height: 39px;
+    background-color: #D1D275;
+    /* Tirar a borda do input */
+    border: 0 none;
+    /* Quando clica no input, tirar uma caixa laranja que aparecia (depende do navegador */
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    /* Darken serve para deixar o elemento com transparẽncia */
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* Borda do input fica colorida quando clica lá */
+.caixinha_input:focus {
+    box-shadow: 0 0 3pt 2pt #62B6AA;
+}
+
+
 .caixinha_titulo {
+    /* Position colocado como absolute para usar o z-index e configurar a hierarquia das camadas */
     position: absolute;
     z-index: 4;
     width: 512px;
@@ -361,6 +422,7 @@
     /* background-color: red; */
     margin-left: 17%;
     padding-top: 20px;
+    /* top foi usado para posicionar o título da caixinha no lugar correto */
     top: 230px;
     font-weight: 600;
     font-size: 24px;
@@ -369,21 +431,34 @@
     text-align: center;
 }
 
-/* Container criado dentro do financeiro corpo para facilitar o posicionamento dos elementos */
-.container_financeiro1 {
-    height: 100%;
-    width: 63.68%;
-    float: left;
-    /* background-color: blue; */
+.caixinha_botao {
+    /* Position colocado como absolute para usar o z-index e configurar a hierarquia das camadas */
+    position: absolute;
+    z-index: 4;
+    top: 600px;
+    margin-left: 40%;
+    width: 250px;
+    height: 79.55px;
+    background: #62B6AA;
+    border-radius: 150px;
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
 }
 
 #img_financeiro {
+    /* Position colocado como absolute para usar o z-index e configurar a hierarquia das camadas */
     position: absolute;
     z-index: 2;
     width: 450px;
     /* Os dois códigos abaixo foram colocados para refletir a imagem horizontalmente */
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    /* right e bottom foram usados para posicionar a imagem adequadamente na tela, respeitando
+    a hierarquia de camadas */
     right: 0px;
     bottom: 0px;
 }

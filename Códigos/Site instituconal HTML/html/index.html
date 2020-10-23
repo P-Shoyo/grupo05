@@ -158,9 +158,23 @@
         <div class="financeiro_corpo">
             <div class="container_financeiro1">
                 <div class="caixinha_entradas">
+                    <div class="caixinha_entradas1">
+                        <img id="img_caixinha" src="../img/ferramentas.png" alt="Ícone com ferramentas de medição">
+                    </div>
+                    <div class="caixinha_entradas2">
+                        Altura:<br>
+                        <input id="altura" class="caixinha_input" type="text"><br>
+                        Largura:<br>
+                        <input id="largura" class="caixinha_input" type="text"><br>
+                        Comprimento:<br>
+                        <input id="comprimento" class="caixinha_input" type="text"><br>
+                    </div>
                 </div>
             </div>
         </div>
+        <button onclick="calculo_financeiro()" class="caixinha_botao">
+            Calcular
+        </button>
 
     </section>
     
@@ -183,3 +197,15 @@
 </body>
 
 </html>
+
+<script>
+    function calculo_financeiro() {
+        var vol_galpao = Number(altura.value) * Number(largura.value) * Number(comprimento.value);
+        var num_arduinos = (vol_galpao) / 3;
+        var prec_arduino = 100;
+        // R$100,00 = Preço unitário do arduíno
+        // Taxa de serviço 5% -> multiplicamos por 1,05 para já aplicar a taxa ao valor total
+        var prec_servico = prec_arduino * num_arduinos * 1.05;
+        alert (`O valor do serviço será de: R$${prec_servico.toFixed(2)}`);
+    }
+</script>
