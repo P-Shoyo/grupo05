@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,65 +8,101 @@
     <link rel="stylesheet" href="../css/loginstyle.css">
 
 </head>
+
 <body>
 
     <!-- COMEÇO HEADER -->
     <div class="header">
         <div class="title-header">
-            <a href="../../Site instituconal HTML/html/index.html"><img class = "logo-imagem" src="../img/Logo Sem Texto.png"></a>
-            <a href="../../Site instituconal HTML/html/index.html"><h1>AMONIMOUS INC</h1></a>
+            <a href="../../Site instituconal HTML/html/index.html"><img class="logo-imagem"
+                    src="../img/Logo Sem Texto.png"></a>
+            <a href="../../Site instituconal HTML/html/index.html">
+                <h1>AMONIMOUS INC</h1>
+            </a>
         </div>
     </div>
     <!-- FIM HEADER -->
 
     <!-- COMEÇO CONTEUDO DA PÁGINA -->
-    <div class="conteudo">
-        <div class="caixota">
 
+
+    <div class="conteudo">
+        <div id="aparecer">
+            <div class="popup_pai">
+                <div class="popup">
+                    <div id="bt_sair" onclick="sair()">X</div>
+                    <h2 class="titulo_popup">Senha ou e-mail incorretos!<br>
+                 </div>
+            </div>
+        </div>
+
+        <div id="caixota">
             <div class="box">
                 <div class="titulo-login">
                     <h1>LOGIN</h1>
                 </div>
 
-                    <div class="title-google">
-                        <h3> Logar com o Google : </h3>
-                        <img class="google" src="../img/Google Sem Fundo.png"> 
-                    </div>
+                <!-- <div class="title-google">
+                    <h3> Logar com o Google : </h3>
+                    <img class="google" src="../img/Google Sem Fundo.png">
+                </div> -->
 
                 <br>
 
-                <div class="login">
-                <label class="label"><b>Email:</b></label> <br>
-                <input placeholder="Email" type="text" class="input" size=67> <br><br>
-                <label class="label"><b>Senha:</b></label> <br>
-                <input placeholder="Senha" type="text" class="input" size=67>
+                <div class="campos">
+                    <div class="campo">
+                        <label><b>Email:</b></label>
+                        <input id="entradaEmail" placeholder="Email" type="text" class="entrada" size=67>
+                    </div>
+                    <div class="campo">
+                        <label><b>Senha:</b></label> <br>
+                        <input id="entradaSenha" placeholder="Senha" type="text" class="entrada" size=67>
+                    </div>
                 </div>
 
                 <br>
 
-                <button class="bt"><b>Entrar</b></button>
+                <button id="bt_entrar" class="bt" onclick="entrar()">Entrar<a id="redirecionar" href=""></a></button>
 
                 <br><br>
 
                 <div class="final-login">
                     <label><a>Esqueci a senha</a></label>
                     <label><a href="cadastro.html">Não tenho conta</a></label>
-                
+
                 </div>
             </div>
         </div>
         <!-- COMEÇO IMAGEM DE FUNDO -->
-        <div class="img-fundo">
+        <div id="img_fundo">
 
-            <img class="imagem-login" src="../img/Protótipos/Login.png">
+            <img class="imagem_login" src="../img/Protótipos/Login.png">
 
         </div>
     </div>
     <footer>
-        COPYRIGHT     2020 AMONIMOUS | TODOS OS DIREITOS RESERVADOS
+            COPYRIGHT     2020 AMONIMOUS | TODOS OS DIREITOS RESERVADOS
     </footer>
 
     <!-- FIM CONTEÚDO DA PÁGINA -->
-    
+
 </body>
+
 </html>
+
+<script>
+    function entrar() {
+        if (entradaSenha.value == 'admin' && entradaEmail.value == 'admin@uorak.com') {
+            window.location.href = `../../Site - Dashboard/HTML/index.html`;
+        } else {
+            aparecer.style = `opacity: 1; transition: opacity 0.5s linear`;
+            caixota.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+            img_fundo.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+        }
+    }
+    function sair() {
+        aparecer.style = `opacity: 0; transition: opacity 0.5s linear`;
+        caixota.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
+        img_fundo.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
+    }
+</script>

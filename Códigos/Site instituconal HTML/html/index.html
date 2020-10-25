@@ -140,41 +140,56 @@
     </section>
     
     <section id="financeiro">
-        <img id="img_financeiro" src="../img/financeiro.svg" alt="Pessoa segurando uma nota fiscal">
-        <div class="financeiro_titulos">
-            <div class="titulo_financeiro">
-                Simulador Financeiro
-            </div>
-            <div class="subtitulo_financeiro">
-                Faça a conta de quanto a nossa solução em sensores custará para o seu armazém
-            </div>
-        </div>
-        <!-- <div class="container_financeiro2">
-            <img id="img_financeiro" src="../img/financeiro.svg" alt="Pessoa segurando uma nota fiscal">
-        </div> -->
-        <div class="caixinha_titulo">
-            Informe as dimensões do local de armazenagem (em metros):
-        </div>
-        <div class="financeiro_corpo">
-            <div class="container_financeiro1">
-                <div class="caixinha_entradas">
-                    <div class="caixinha_entradas1">
-                        <img id="img_caixinha" src="../img/ferramentas.png" alt="Ícone com ferramentas de medição">
-                    </div>
-                    <div class="caixinha_entradas2">
-                        Altura:<br>
-                        <input id="altura" class="caixinha_input" type="text"><br>
-                        Largura:<br>
-                        <input id="largura" class="caixinha_input" type="text"><br>
-                        Comprimento:<br>
-                        <input id="comprimento" class="caixinha_input" type="text"><br>
+            <div id="aparecer">
+                <div class="popup_pai">
+                    <div class="popup">
+                        <div id="bt_sair" onclick="sair()">X</div>
+                        <h2 class="titulo_popup">O valor total do serviço para<br>
+                            seu armazém será de:</h2><br>
+                        <div class="div_valor_servico">
+                            <h3 id="valor_servico">R$ 0.00</h3>
+                        </div><br>
+                        <h4>Com isso, você economizou R$ <span id="valorComDesconto">0.00</span></h4><br>
+                        <img src="../img/fidelidade.png" alt="Tabela com planos de fidelidade" style="width: 420px">
+                        <a id="bt_cadastro" href="../../Site - Tela de Cadastro e Login/html/cadastro.html" style="text-decoration: none">Cadastre-se</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <button onclick="calculo_financeiro()" class="caixinha_botao">
-            Calcular
-        </button>
+            <img id="img_financeiro" src="../img/financeiro.svg" alt="Pessoa segurando uma nota fiscal">
+            <div id="financeiro_titulos">
+                <div class="titulo_financeiro">
+                    Simulador Financeiro
+                </div>
+                <div class="subtitulo_financeiro">
+                    Faça a conta de quanto a nossa solução em sensores custará para o seu armazém
+                </div>
+            </div>
+            <!-- <div class="container_financeiro2">
+                <img id="img_financeiro" src="../img/financeiro.svg" alt="Pessoa segurando uma nota fiscal">
+            </div> -->
+            <div id="caixinha_titulo">
+                Informe as dimensões do local de armazenagem (em metros):
+            </div>
+            <div id="financeiro_corpo">
+                <div class="container_financeiro1">
+                    <div class="caixinha_entradas">
+                        <div class="caixinha_entradas1">
+                            <img id="img_caixinha" src="../img/ferramentas.png" alt="Ícone com ferramentas de medição">
+                        </div>
+                        <div class="caixinha_entradas2">
+                            Altura:<br>
+                            <input id="altura" class="caixinha_input" type="text"><br>
+                            Largura:<br>
+                            <input id="largura" class="caixinha_input" type="text"><br>
+                            Comprimento:<br>
+                            <input id="comprimento" class="caixinha_input" type="text"><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="calculo_financeiro()" id="caixinha_botao">
+                Calcular
+            </button>
 
     </section>
     
@@ -206,6 +221,37 @@
         // R$100,00 = Preço unitário do arduíno
         // Taxa de serviço 5% -> multiplicamos por 1,05 para já aplicar a taxa ao valor total
         var prec_servico = prec_arduino * num_arduinos * 1.05;
-        alert (`O valor do serviço será de: R$${prec_servico.toFixed(2)}`);
+        var prec_servico_desconto = prec_servico;
+        if (prec_servico >= 50000 && prec_servico < 100000) {
+            prec_servico_desconto *= 0.975;
+        } else if (prec_servico >= 100000 && prec_servico < 200000) {
+            prec_servico_desconto *= 0.95;
+        } else if (prec_servico >= 200000 && prec_servico < 250000) {
+            prec_servico_desconto *= 0.9;
+        } else if (prec_servico >= 250000 && prec_servico < 300000) {
+            prec_servico_desconto *= 0.85;
+        } else if (prec_servico >= 300000) {
+            prec_servico_desconto *= 0.8;
+        } else {
+            prec_servico_desconto = prec_servico;
+        }
+
+        valor_servico.innerHTML = `R$ ${prec_servico_desconto.toFixed(2)}`;
+        valorComDesconto.innerHTML = (prec_servico - prec_servico_desconto).toFixed(2);
+        aparecer.style = `opacity: 1; transition: opacity 0.5s linear`;
+        img_financeiro.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+        financeiro_titulos.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+        caixinha_titulo.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+        financeiro_corpo.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+        caixinha_botao.style += `filter: blur(20px); -webkit-filter: blur(20px)`;
+    }
+
+    function sair() {
+        aparecer.style = `opacity: 0; transition: opacity 0.5s linear;`;
+        img_financeiro.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
+        financeiro_titulos.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
+        caixinha_titulo.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
+        financeiro_corpo.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
+        caixinha_botao.style -= `filter: blur(20px); -webkit-filter: blur(20px)`;
     }
 </script>
