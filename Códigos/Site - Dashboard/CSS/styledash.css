@@ -28,19 +28,21 @@ body {
 }
 
 .caixacima{
+    margin-top: 5%;
     height: 45%;
     width: 20%;
-    background-color: #FBFF47;
-    border:#232323 5px solid;
+    background-color: #62B6AA;
+    border-radius: 30px;
     text-align: center;
     display: flex;
 }
 
 .caixabaixo{
+    margin-bottom: 10%;
     height: 45%;
     width: 20%;
-    background-color: #FBFF47;
-    border:#232323 5px solid;
+    background-color: #62B6AA;
+    border-radius: 30px;
     text-align: center;
     display: flex;
 }
@@ -61,6 +63,7 @@ body{
 .imglogo{
     height: 80px;
     margin-top: 15px;
+    margin-right: 15px;
 }
 
 .imglupa{
@@ -71,7 +74,7 @@ body{
 .imgporta{
     height: 110px;
     bottom: 30px;
-    left: 60px;
+    left: 30px;
     position: absolute;
 }
 
@@ -100,8 +103,15 @@ body{
     margin-right: 30px;
     margin-left: 30px;
     font-size: 80px;
-    color: black;
+    color: white;
 
+}
+
+.voltar {
+    height: 60px;
+    position: absolute;
+    top:2%;
+    left: 10%;
 }
 
 

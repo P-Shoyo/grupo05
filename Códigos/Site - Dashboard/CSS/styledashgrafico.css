@@ -20,7 +20,7 @@ body {
 
 .caixotinhas{
     background-color:#F4F597;
-    height: 310px;
+    height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,8 +29,8 @@ body {
 
 .caixacima{
     margin-top: 10%;
-    height: 70%;
-    width: 20%;
+    height: 65%;
+    width: 50%;
     background-color: #62B6AA;
     border-radius: 30px;
     text-align: center;
@@ -38,19 +38,10 @@ body {
 }
 
 .caixabaixo{
-    margin-top: 5%;
-    height: 70%;
-    width: 20%;
+    margin-bottom: 3%;
+    height: 65%;
+    width: 50%;
     background-color: #62B6AA;
-    border-radius: 30px;
-    text-align: center;
-    display: flex;
-}
-
-.caixamaisbaixo{
-    height: 70%;
-    width: 20%;
-    background-color:#62B6AA;
     border-radius: 30px;
     text-align: center;
     display: flex;
@@ -97,10 +88,12 @@ body{
 .peripecia{
     font-size: 35px;
     top: 30px;
+    left: 42%;
     position: absolute;
     color: #232323;
     font-weight: bold;
 }
+
 
 .armazens{
     height: 70%;
@@ -116,10 +109,25 @@ body{
 
 }
 
+.temperatura{
+    height: 150px;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+}
+
+.umidade{
+    height: 150px;
+    position: absolute;
+    bottom: 15%;
+    left: 19%;
+}
+
 .voltar {
     height: 60px;
     position: absolute;
     top:2%;
     left: 10%;
 }
+
 
