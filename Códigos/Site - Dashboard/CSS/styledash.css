@@ -1,0 +1,107 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.caixota {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #232323;
+    border:#232323 10px solid;
+    
+}
+
+.caixotinhas{
+    background-color:#F4F597;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.caixacima{
+    height: 45%;
+    width: 20%;
+    background-color: #FBFF47;
+    border:#232323 5px solid;
+    text-align: center;
+    display: flex;
+}
+
+.caixabaixo{
+    height: 45%;
+    width: 20%;
+    background-color: #FBFF47;
+    border:#232323 5px solid;
+    text-align: center;
+    display: flex;
+}
+
+.colunalateral{
+    width: 10%;
+    height: 100%;
+    background-color: #232323;
+    text-align: center;
+}
+
+body{
+    color: white;
+    display: flex;
+    margin: 0px;
+}
+
+.imglogo{
+    height: 80px;
+    margin-top: 15px;
+}
+
+.imglupa{
+    height: 80px;
+    margin-top: 40px;
+}
+
+.imgporta{
+    height: 110px;
+    bottom: 30px;
+    left: 60px;
+    position: absolute;
+}
+
+.imgadmincomletra{
+    top:0%;
+    right: 0%;
+    margin: 20px;
+    position: absolute;
+}
+
+.peripecia{
+    font-size: 35px;
+    top: 30px;
+    position: absolute;
+    color: #232323;
+    font-weight: bold;
+}
+
+.armazens{
+    height: 70%;
+    margin-top: 10%;
+}
+
+.letraarmazens{
+    margin-top: 15%;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 80px;
+    color: black;
+
+}
+
+
