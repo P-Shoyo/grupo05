@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Amonimous</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<section>
+			<h1>Sensor DHT11 - Umidade</h1>
+			<!-- <h2>Média: <label id='averageHumidity'>0.00</label></h2>
+				<h2>Média Hora: <label id='averageHourHumidity'>0.00</label></h2> -->
+		</section>
+
+		<section style="width:100%">
+			<canvas id="chart-humidity"></canvas>
+		</section>
+
+	</div>
+
+</body>
+
+</html>
+<script src="config.js"></script>
