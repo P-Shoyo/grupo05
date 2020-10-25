@@ -295,7 +295,7 @@
 }
 
 /* Div para conter os títulos da tela de financeiro */
-.financeiro_titulos {
+#financeiro_titulos {
     position: relative;
     height: 38.5%;
     z-index: 0;
@@ -335,7 +335,7 @@
 }
 
 /* Div para conter todo o corpo da tela de financeiro */
-.financeiro_corpo {
+#financeiro_corpo {
     height: 61.5%;
     /* background-color: blue; */
 }
@@ -411,7 +411,7 @@
 }
 
 
-.caixinha_titulo {
+#caixinha_titulo {
     /* Position colocado como absolute para usar o z-index e configurar a hierarquia das camadas */
     position: absolute;
     z-index: 4;
@@ -431,7 +431,7 @@
     text-align: center;
 }
 
-.caixinha_botao {
+#caixinha_botao {
     /* Position colocado como absolute para usar o z-index e configurar a hierarquia das camadas */
     position: absolute;
     z-index: 4;
@@ -461,6 +461,91 @@
     a hierarquia de camadas */
     right: 0px;
     bottom: 0px;
+}
+
+
+/* Configuração do popup quando o botão calcular é clicado */
+
+/* Div criada para controlar o aparecimento ou desaparecimento do popup*/
+#aparecer {
+    /* display: none; */
+    opacity: 0;
+}
+
+/* Div com as dimensões do popup */
+.popup_pai {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+
+.popup {
+    width: 540px;
+    height: 600px;
+    background-color: #62B6AA;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão com o X para sair da tela do financeiro */
+#bt_sair {
+    padding: 8px 20px 8px 20px;
+    top: 0px;
+    right: 0px;
+}
+
+#bt_sair, #bt_cadastro {
+    background-color: #FBFF47;
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+#bt_cadastro {
+    padding: 8px 20px 8px 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0px;
+    text-decoration: none;
+}
+
+/* Título do popup, somente para facilitar o posicionamento */
+.titulo_popup {
+    background-color: rgba(53, 53, 53, 0.6);
+    top: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+}
+
+/* Div do valor calculado, somente para facilitar o posicionamento */
+.div_valor_servico {
+    width: 220px;
+    height: 50px;
+    background-color: #353535;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Div criada para poder substituir o valor quando clicar no botão */
+#valor_servico {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
  
 
