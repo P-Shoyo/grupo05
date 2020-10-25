@@ -28,22 +28,20 @@ body {
 }
 
 .caixacima{
-    height: 45%;
-    width: 20%;
-    background-color: #FBFF47;
-    border:#232323 5px solid;
+    margin-top: 10%;
+    height: 65%;
+    width: 50%;
+    background-color: #62B6AA;
+    border-radius: 30px;
     text-align: center;
     display: flex;
 }
 
 .caixabaixo{
-    height: 40%;
-    width: 40%;
-    border-bottom:#232323 5px solid;
-    text-align: center;
+    margin-bottom: 30%;
+    margin-right: 6%;
     display: flex;
-    top: 20%;
-    position: absolute;
+    left: 20%;
 }
 
 .colunalateral{
@@ -91,19 +89,6 @@ body{
     position: absolute;
 }
 
-.peripecia{
-    font-size: 35px;
-    top: 30px;
-    position: absolute;
-    color: #232323;
-    font-weight: bold;
-}
-
-.armazens{
-    height: 70%;
-    margin-top: 10%;
-}
-
 .imgadmincomletra{
     top:0%;
     right: 0%;
@@ -111,21 +96,49 @@ body{
     position: absolute;
 }
 
-.admin {
-    font-size: 60px;
-    color: black;
-    margin-top: 25%;
+.peripecia{
+    font-size: 35px;
+    top: 30px;
+    left: 42%;
+    position: absolute;
+    color: #232323;
+    font-weight: bold;
 }
 
-.consulte {
-    font-size: 30px;
-    color: black;
-    margin-bottom: 13%;
+
+.armazens{
+    height: 70%;
+    margin-top: 10%;
 }
 
-.pessoa{
-    height: 300px;
-    width: 300px;
-    margin-top: 8%;
+.letraarmazens{
+    margin-top: 15%;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 80px;
+    color: white;
+
 }
+
+.temperatura{
+    height: 150px;
+    position: absolute;
+    top: 25%;
+    left: 19%;
+}
+
+.umidade{
+    height: 150px;
+    position: absolute;
+    bottom: 15%;
+    left: 19%;
+}
+
+.voltar {
+    height: 60px;
+    position: absolute;
+    top:2%;
+    left: 10%;
+}
+
 
