@@ -1,4 +1,4 @@
-//Gráfico de temperatura
+//Gráfico de umidade
 
 var context2 = document.getElementById("chart-humidity").getContext("2d");
 context2.canvas.width = 1000;
@@ -9,8 +9,9 @@ var humidity = {
 	data: {
 		datasets: [{
 			label: "Armazém 1",
-			// type: 'horizontalBar',
+			// type: 'line',
 			fill: false,
+			display:true,
 			borderColor: ['#FBFF47'],
 			backgroundColor: ['#FBFF47']
 		},
@@ -19,7 +20,7 @@ var humidity = {
 	options: {
 		scales: {
 			xAxes: [{
-				//type: 'value',
+				type: 'value',
 				distribution: 'series',
 				ticks: {
 					beginAtZero: true
@@ -48,7 +49,6 @@ var humidity = {
 };
 
 var chartHumidity = new Chart(context2, humidity);
-
 //Função para obter os dados de temperatura do server
 //Seria mais interessante fazer isso com WebSocket, porém para fins academicos, os dados serão atualizados via HTTP
 
@@ -75,38 +75,23 @@ function get_dataHumidity() {
 	listTemp.forEach(data => {
 
 		//Máximo de 60 itens exibidos no gráfico
-		// if (chartHumidity.data.labels.length == 1 && chartHumidity.data.datasets[0].data.length == 1) {
+		if (chartHumidity.data.labels.length == 10 && chartHumidity.data.datasets[0].data.length == 10) {
 			chartHumidity.data.labels.shift();
 
 			chartHumidity.data.datasets[0].data.shift();
 			// chartHumidity.data.datasets[1].data.shift();
-			// chartHumidity.data.datasets[2].data.shift();
-			// chartHumidity.data.datasets[3].data.shift();
-			// chartHumidity.data.datasets[4].data.shift();
-			// chartHumidity.data.datasets[5].data.shift();
-			// chartHumidity.data.datasets[6].data.shift();
-			// chartHumidity.data.datasets[7].data.shift();
-			// chartHumidity.data.datasets[8].data.shift();
-			// chartHumidity.data.datasets[9].data.shift();
-
-		// }
+		}
 
 		chartHumidity.data.labels.push(this.time++);
 
 		chartHumidity.data.datasets[0].data.push(parseFloat(data));
 		// chartHumidity.data.datasets[1].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[2].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[3].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[4].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[6].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[7].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[8].data.push(dados_aleatorios(data));
-		// chartHumidity.data.datasets[9].data.push(dados_aleatorios(data));
+		
 
 		chartHumidity.update();
 	});
 
-}
+} 
 
 function dados_aleatorios(data) {
 
