@@ -38,7 +38,6 @@ body {
 }
 
 .caixabaixo{
-    margin-bottom: 30%;
     margin-right: 6%;
     display: flex;
     left: 20%;
@@ -64,32 +63,35 @@ body{
 }
 
 .imglupa{
-    height: 80px;
-    margin-top: 40px;
+    height: 60px;
+    top:35%;
+    position: absolute;
+    left: 45px;
 }
 
 .imgporta{
-    height: 110px;
+    height: 80px;
     bottom: 30px;
     left: 30px;
     position: absolute;
 }
 
 .imgtemp1{
-    height: 80px;
-    top:30%;
-    left: 3%;
+    height: 60px;
+    top:50%;
+    left: 50px;
     position: absolute;
 }
 
 .imgdetec{
-    height: 80px;
-    top:45%;
+    height: 60px;
+    top:65%;
     left: 45px;
     position: absolute;
 }
 
 .imgadmincomletra{
+    height: 60px;
     top:0%;
     right: 0%;
     margin: 20px;
@@ -135,10 +137,18 @@ body{
 }
 
 .voltar {
-    height: 60px;
+    height: 40px;
     position: absolute;
-    top:2%;
-    left: 10%;
+    top:3%;
+    left: 11%;
+}
+
+.tabelatemp{
+    top:18%;
+    right: 10%;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
 }
 
 

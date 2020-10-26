@@ -66,27 +66,29 @@ body{
 }
 
 .imglupa{
-    height: 80px;
-    margin-top: 40px;
+    height: 60px;
+    top:35%;
+    position: absolute;
+    left: 45px;
 }
 
 .imgporta{
-    height: 110px;
+    height: 80px;
     bottom: 30px;
     left: 30px;
     position: absolute;
 }
 
 .imgtemp1{
-    height: 80px;
-    top:30%;
-    left: 3%;
+    height: 60px;
+    top:50%;
+    left: 50px;
     position: absolute;
 }
 
 .imgdetec{
-    height: 80px;
-    top:45%;
+    height: 60px;
+    top:65%;
     left: 45px;
     position: absolute;
 }
@@ -105,6 +107,7 @@ body{
 }
 
 .imgadmincomletra{
+    height: 60px;
     top:0%;
     right: 0%;
     margin: 20px;
@@ -112,9 +115,10 @@ body{
 }
 
 .admin {
-    font-size: 60px;
+    font-size: 40px;
     color: black;
-    margin-top: 25%;
+    margin-top: 20%;
+    margin-left: 20px;
 }
 
 .consulte {
@@ -124,8 +128,9 @@ body{
 }
 
 .pessoa{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin-top: 8%;
+    margin-left: 30px;
 }
 

@@ -28,7 +28,7 @@ body {
 }
 
 .caixacima{
-    margin-top: 10%;
+    margin-top: 15%;
     height: 65%;
     width: 50%;
     background-color: #62B6AA;
@@ -38,7 +38,7 @@ body {
 }
 
 .caixabaixo{
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     height: 65%;
     width: 50%;
     background-color: #62B6AA;
@@ -67,32 +67,35 @@ body{
 }
 
 .imglupa{
-    height: 80px;
-    margin-top: 40px;
+    height: 60px;
+    top:35%;
+    position: absolute;
+    left: 45px;
 }
 
 .imgporta{
-    height: 110px;
+    height: 80px;
     bottom: 30px;
     left: 30px;
     position: absolute;
 }
 
 .imgtemp1{
-    height: 80px;
-    top:30%;
-    left: 3%;
+    height: 60px;
+    top:50%;
+    left: 50px;
     position: absolute;
 }
 
 .imgdetec{
-    height: 80px;
-    top:45%;
+    height: 60px;
+    top:65%;
     left: 45px;
     position: absolute;
 }
 
 .imgadmincomletra{
+    height: 60px;
     top:0%;
     right: 0%;
     margin: 20px;
@@ -126,22 +129,22 @@ body{
 .temperatura{
     height: 150px;
     position: absolute;
-    top: 25%;
+    top: 28%;
     left: 19%;
 }
 
 .umidade{
     height: 150px;
     position: absolute;
-    bottom: 15%;
+    bottom: 12%;
     left: 19%;
 }
 
 .voltar {
-    height: 60px;
+    height: 40px;
     position: absolute;
-    top:2%;
-    left: 10%;
+    top:3%;
+    left: 11%;
 }
 
 

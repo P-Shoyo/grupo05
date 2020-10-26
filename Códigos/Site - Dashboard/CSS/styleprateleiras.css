@@ -20,16 +20,17 @@ body {
 
 .caixotinhas{
     background-color:#F4F597;
-    height: 310px;
+    height: 33vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     
 }
 
-.caixacima{
+
+.caixacima {
+    height: 60%;
     margin-top: 10%;
-    height: 70%;
     width: 20%;
     background-color: #62B6AA;
     border-radius: 30px;
@@ -40,23 +41,23 @@ body {
 
 .caixabaixo{
     margin-top: 5%;
-    height: 70%;
+    height: 60%;
     width: 20%;
     background-color: #62B6AA;
     border-radius: 30px;
     text-align: center;
     display: flex;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 .caixamaisbaixo{
-    height: 70%;
+    height: 60%;
     width: 20%;
-    background-color:#62B6AA;
+    background-color: #62B6AA;
     border-radius: 30px;
     text-align: center;
     display: flex;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 .colunalateral{
@@ -79,32 +80,35 @@ body{
 }
 
 .imglupa{
-    height: 80px;
-    margin-top: 40px;
+    height: 60px;
+    top:35%;
+    position: absolute;
+    left: 45px;
 }
 
 .imgporta{
-    height: 110px;
+    height: 80px;
     bottom: 30px;
     left: 30px;
     position: absolute;
 }
 
 .imgtemp1{
-    height: 80px;
-    top:30%;
-    left: 3%;
+    height: 60px;
+    top:50%;
+    left: 50px;
     position: absolute;
 }
 
 .imgdetec{
-    height: 80px;
-    top:45%;
+    height: 60px;
+    top:65%;
     left: 45px;
     position: absolute;
 }
 
 .imgadmincomletra{
+    height: 60px;
     top:0%;
     right: 0%;
     margin: 20px;
@@ -120,23 +124,23 @@ body{
 }
 
 .armazens{
-    height: 70%;
-    margin-top: 10%;
+    height: 50%;
+    margin-top: 13%;
 }
 
 .letraarmazens{
-    margin-top: 15%;
+    margin-top: 12%;
     margin-right: 30px;
     margin-left: 30px;
-    font-size: 80px;
+    font-size: 50px;
     color: white;
 
 }
 
 .voltar {
-    height: 60px;
+    height: 40px;
     position: absolute;
-    top:2%;
-    left: 10%;
+    top:3%;
+    left: 11%;
 }
 
