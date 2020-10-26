@@ -27,7 +27,8 @@ body {
     
 }
 
-.caixacima{
+
+.caixacima {
     margin-top: 5%;
     height: 45%;
     width: 20%;
@@ -35,6 +36,7 @@ body {
     border-radius: 30px;
     text-align: center;
     display: flex;
+    text-decoration: none;
 }
 
 .caixabaixo{
@@ -45,6 +47,7 @@ body {
     border-radius: 30px;
     text-align: center;
     display: flex;
+    text-decoration:none;
 }
 
 .colunalateral{
