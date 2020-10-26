@@ -5,7 +5,7 @@ context2.canvas.width = 1000;
 context2.canvas.height = 300;
 
 var humidity = {
-	type: 'horizontalBar',
+	type: 'line',
 	data: {
 		datasets: [{
 			label: "Armazém 1",
@@ -14,69 +14,6 @@ var humidity = {
 			borderColor: ['#FBFF47'],
 			backgroundColor: ['#FBFF47']
 		},
-		// {
-		// 	label: "Armazém 2",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 3",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 4",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 5",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 6",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 7",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 8",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 9",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// },
-		// {
-		// 	label: "Armazém 10",
-		// 	type: 'horizontalBar',
-		// 	fill: false,
-		// 	borderColor: ['#FBFF47'],
-		// 	backgroundColor: ['#FBFF47']
-		// }
 	]
 	},
 	options: {
